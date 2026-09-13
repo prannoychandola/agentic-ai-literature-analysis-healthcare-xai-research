@@ -1,0 +1,125 @@
+{
+  "timestamp": "2026-09-06T08:55:10.151964+00:00",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "number_of_corpus_papers": 187,
+  "number_of_papers_embedded": 175,
+  "number_excluded_due_to_missing_abstracts": 12,
+  "embedding_dimension": 384,
+  "normalization_method": "L2 normalization per embedding vector",
+  "k_values_tested": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "metrics": [
+    {
+      "k": 2,
+      "silhouette_score": 0.06542618572711945,
+      "calinski_harabasz_score": 12.040136988586218,
+      "davies_bouldin_score": 3.643433887238989,
+      "inertia": 78.02689361572266,
+      "cluster_sizes": {
+        "0": 67,
+        "1": 108
+      }
+    },
+    {
+      "k": 3,
+      "silhouette_score": 0.04152434319257736,
+      "calinski_harabasz_score": 10.056151896400692,
+      "davies_bouldin_score": 3.4531952732552296,
+      "inertia": 74.72008514404297,
+      "cluster_sizes": {
+        "0": 48,
+        "1": 66,
+        "2": 61
+      }
+    },
+    {
+      "k": 4,
+      "silhouette_score": 0.06151772662997246,
+      "calinski_harabasz_score": 9.291094406588515,
+      "davies_bouldin_score": 3.2421490319691366,
+      "inertia": 71.76022338867188,
+      "cluster_sizes": {
+        "0": 48,
+        "1": 71,
+        "2": 38,
+        "3": 18
+      }
+    },
+    {
+      "k": 5,
+      "silhouette_score": 0.05168788880109787,
+      "calinski_harabasz_score": 8.006735662602201,
+      "davies_bouldin_score": 3.2172399735657775,
+      "inertia": 70.22694396972656,
+      "cluster_sizes": {
+        "0": 20,
+        "1": 47,
+        "2": 41,
+        "3": 33,
+        "4": 34
+      }
+    },
+    {
+      "k": 6,
+      "silhouette_score": 0.039623986929655075,
+      "calinski_harabasz_score": 7.376749872362459,
+      "davies_bouldin_score": 3.137585221180436,
+      "inertia": 68.50602722167969,
+      "cluster_sizes": {
+        "0": 35,
+        "1": 19,
+        "2": 40,
+        "3": 18,
+        "4": 41,
+        "5": 22
+      }
+    },
+    {
+      "k": 7,
+      "silhouette_score": 0.05048385635018349,
+      "calinski_harabasz_score": 6.820101894888982,
+      "davies_bouldin_score": 2.8746801030594265,
+      "inertia": 67.11075592041016,
+      "cluster_sizes": {
+        "0": 33,
+        "1": 12,
+        "2": 37,
+        "3": 18,
+        "4": 54,
+        "5": 16,
+        "6": 5
+      }
+    },
+    {
+      "k": 8,
+      "silhouette_score": 0.04647058621048927,
+      "calinski_harabasz_score": 6.102069600466844,
+      "davies_bouldin_score": 2.978589519036847,
+      "inertia": 66.45874786376953,
+      "cluster_sizes": {
+        "0": 18,
+        "1": 45,
+        "2": 4,
+        "3": 5,
+        "4": 32,
+        "5": 17,
+        "6": 42,
+        "7": 12
+      }
+    }
+  ],
+  "selected_k": 2,
+  "selection_criterion": "highest silhouette score",
+  "tie_breaking_rule": "If silhouette scores differ by no more than 1e-12, select the smallest K.",
+  "random_state": 42,
+  "kmeans_n_init": 20,
+  "embedding_text": "title + abstract; rows with empty abstracts excluded",
+  "semantic_analysis_scope": "This experiment identifies semantic structure/themes; it does not prove research gaps."
+}

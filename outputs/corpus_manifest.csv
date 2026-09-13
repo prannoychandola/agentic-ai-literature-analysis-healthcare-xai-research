@@ -1,0 +1,188 @@
+corpus_index,source,paper_id,title,year,doi,has_abstract
+1,semantic_scholar,ae1fe10973e99b8eba001265867af19e47dd9bbf,Leveraging blockchain-integrated explainable artificial intelligence (XAI) for ethical and personalized healthcare decision-making: a framework for secure data sharing and enhanced patient trust,2025,10.1007/s11227-025-07844-0,False
+2,semantic_scholar,aa33fb89ceef2e25445cbcbf65cba2ead713ce38,A review of Explainable Artificial Intelligence in healthcare,2024,10.1016/j.compeleceng.2024.109370,False
+3,semantic_scholar,03a9540aa71ee8921d7656e0a78eb08a64f68a94,Towards Transparent Healthcare: Advancing Local Explanation Methods in Explainable Artificial Intelligence,2024,10.3390/bioengineering11040369,True
+4,semantic_scholar,6cc7bcd5f0a3fc408c5f4fa97fe638ef03dd7fab,Synergizing advanced algorithm of explainable artificial intelligence with hybrid model for enhanced brain tumor detection in healthcare,2025,10.1038/s41598-025-07524-2,True
+5,semantic_scholar,3b54c7037005fbb4e827e8787a024dd18e0dd619,Application of explainable artificial intelligence for healthcare: A systematic review of the last decade (2011-2022),2022,10.1016/j.cmpb.2022.107161,True
+6,semantic_scholar,bc2efacd0095481378da598b930c1ea8abcb404c,"A survey of explainable artificial intelligence in healthcare: Concepts, applications, and challenges",2024,10.1016/j.imu.2024.101587,False
+7,semantic_scholar,747ce5b1d0178cb08dcf48e43f738f1476876ed5,Explainable Artificial Intelligence (XAI): Concepts and Challenges in Healthcare,2023,10.3390/ai4030034,True
+8,semantic_scholar,a7cba054110883abe703bb759e869e297e90c7f4,The enlightening role of explainable artificial intelligence in medical & healthcare domains: A systematic literature review,2023,10.1016/j.compbiomed.2023.107555,True
+9,semantic_scholar,e78cb101db209a389485792a06c3ec4e86ccc1c8,"A Review on Explainable Artificial Intelligence for Healthcare: Why, How, and When?",2023,10.1109/TAI.2023.3266418,True
+10,semantic_scholar,f975e61108df93736dc63e50b4a132b7023b0ccd,Essential properties and explanation effectiveness of explainable artificial intelligence in healthcare: A systematic review,2023,10.1016/j.heliyon.2023.e16110,True
+11,semantic_scholar,20c02c51420a69ae39b74d8d73148417819dacc1,Interpreting Black-Box Models: A Review on Explainable Artificial Intelligence,2023,10.1007/s12559-023-10179-8,True
+12,semantic_scholar,1d5831e7b535d4a26efcc730c92bf6e964d602ba,Explainable Artificial Intelligence (XAI) in Healthcare: Enhancing Transparency and Trust,2024,10.36948/ijfmr.2024.v06i06.30010,True
+13,semantic_scholar,946485ed9eba9af9528ef9bbc5ccac97346f12f0,A Novel Approach of Brain-Computer Interfacing (BCI) and Grad-CAM Based Explainable Artificial Intelligence: Use Case Scenario for Smart Healthcare.,2024,10.1016/j.jneumeth.2024.110159,True
+14,semantic_scholar,ff4956abc7d5afbe5f9ac68f3c536567c26773c2,"A Systematic Review of Trustworthy and Explainable Artificial Intelligence in Healthcare: Assessment of Quality, Bias Risk, and Data Fusion",2023,10.1016/j.inffus.2023.03.008,False
+15,semantic_scholar,068186a0da96ce2c1437a971d08817dd54980116,Explainable Artificial Intelligence in Healthcare,2024,10.36948/ijfmr.2024.v06i02.18735,True
+16,semantic_scholar,a1b5e4b4a430058e33498e4d842734344d1fb7f9,The role of explainable artificial intelligence in disease prediction: a systematic literature review and future research directions,2025,10.1186/s12911-025-02944-6,True
+17,semantic_scholar,11208cbc06ce190e0821cef5182584b17cc19f15,"A comprehensive review of explainable artificial intelligence in healthcare methods, evaluation, and clinical integration",2026,10.1016/j.isci.2026.115026,True
+18,semantic_scholar,1fa9eac98094fce735727c4ff0391448a4038b97,Explainable Artificial Intelligence in Healthcare -A Review,2024,10.1109/ICICT60155.2024.10544745,True
+19,semantic_scholar,4d97eefb9efbc39f91922337a90403eb88c2ace7,An Overview for Trustworthy and Explainable Artificial Intelligence in Healthcare,2024,10.1109/IT61232.2024.10475733,True
+20,semantic_scholar,47ead100d2f049e0b32fd1a449e23d10176a8c38,Explainable Artificial Intelligence in Neuroimaging of Alzheimer’s Disease,2025,10.3390/diagnostics15050612,True
+21,semantic_scholar,2a0f189edcf522d8568f8fbe32373a17cb77cb57,A Systematic Review of Human-Computer Interaction and Explainable Artificial Intelligence in Healthcare with Artificial Intelligence Techniques,2021,10.1109/ACCESS.2021.3127881,True
+22,semantic_scholar,856df8680f47da9b267b896fcdfdf0fb010f73e4,"Explainable Artificial Intelligence in Healthcare: Current Landscape, Challenges, and Future Directions",2026,10.1002/hsr2.72172,True
+23,semantic_scholar,682d9147abcd9a7b1bd536dcdbf2319a75529c54,Explainable Artificial Intelligence for Predictive Modeling in Healthcare,2022,10.1007/s41666-022-00114-1,True
+24,semantic_scholar,b89fc2186636ef33f09a1a34315227286a70197b,A Literature Review on Applications of Explainable Artificial Intelligence (XAI),2025,10.1109/ACCESS.2025.3546681,True
+25,semantic_scholar,bb9959d715b8933b2036b94513122f1f9cbbe355,Explainable Artificial Intelligence With Cloud and Blockchain-as-a-Service Model for Consumer Electronics in Connected Healthcare,2026,10.1109/TCE.2025.3632121,True
+26,semantic_scholar,3d0e50db52a8ada674aebf13e8fa02ed3ef63177,Explainable artificial intelligence to increase transparency for revolutionizing healthcare ecosystem and the road ahead,2023,10.1007/s13721-023-00437-y,False
+27,semantic_scholar,a4b0744a93fee40f1e16904af16e06294eff0dcd,Explainable artificial intelligence (XAI): from inherent explainability to large language models,2025,10.48550/arXiv.2501.09967,True
+28,semantic_scholar,0024c33a8cca7175b92880b8c47940deeb05e87c,An Explainable Artificial Intelligence Model for the Classification of Breast Cancer,2025,10.1109/ACCESS.2023.3308446,True
+29,semantic_scholar,c3f6a0e8e2468f1baa1aafc689d6acc0a710f82e,Healthcare Trust Evolution with Explainable Artificial Intelligence: Bibliometric Analysis,2023,10.3390/info14100541,True
+30,semantic_scholar,a1e6d1070eb1d9b587e2c8d1cf4b3eacc7416ae9,Uncertainty-aware multi-criteria decision analysis for evaluation of explainable artificial intelligence methods: A use case from the healthcare domain,2024,10.1016/j.ins.2023.119987,False
+31,semantic_scholar,421cebc60f864bdfa680bd1021b22c608b480650,Explainable Artificial Intelligence: A Perspective on Drug Discovery,2025,10.3390/pharmaceutics17091119,True
+32,semantic_scholar,44c82b19180e786c3993d9bcfd933aa4f14455d3,Towards Transparent and Accurate Diabetes Prediction Using Machine Learning and Explainable Artificial Intelligence,2025,10.48550/arXiv.2501.18071,True
+33,semantic_scholar,8137fbbaf69d80dacb87ca05ab516b04bb03db02,From Black Box to Glass Box: A Practical Review of Explainable Artificial Intelligence (XAI),2025,10.3390/ai6110285,True
+34,semantic_scholar,cf7bd780cc164e913ca9a40753fdb7169bbf826a,A Review of Explainable Artificial Intelligence from the Perspectives of Challenges and Opportunities,2025,10.3390/a18090556,True
+35,semantic_scholar,6c6db739b6f6f0028c5af43d71cc1feaad7b1afb,Explainable Artificial Intelligence (XAI) in Healthcare,2024,10.1201/9781003426073,False
+36,semantic_scholar,dc49d359f6077e831c3d4ee853979cdf9cb960b1,Synergizing Fusion Modeling for Accurate Cardiac Prediction Through Explainable Artificial Intelligence,2025,10.1109/TCE.2024.3419814,True
+37,semantic_scholar,449440154af5b6cadc5fc28c3b76dcb32b193010,Developing a Transparent Anaemia Prediction Model Empowered With Explainable Artificial Intelligence,2025,10.1109/ACCESS.2024.3522080,True
+38,semantic_scholar,684b28b91706535fc89a17f02d69945a01200315,The need for balancing 'black box' systems and explainable artificial intelligence: A necessary implementation in radiology.,2025,10.1016/j.ejrad.2025.112014,True
+39,semantic_scholar,e42c6be8fc7e128956273bd7d8ce32dc14c536ef,"The human factor in explainable artificial intelligence: clinician variability in trust, reliance, and performance",2025,10.1038/s41746-025-02023-0,True
+40,semantic_scholar,52053dc5883fdc2259b210277fd2f0cfb8363cbf,Development of explainable artificial intelligence based machine learning model for predicting 30-day hospital readmission after renal transplantation,2025,10.1186/s12882-025-04128-w,True
+41,semantic_scholar,6239b56d3d45936b4bd5fa4363f43783ccf71e01,A Brief Review of Explainable Artificial Intelligence in Healthcare,2023,10.48550/arXiv.2304.01543,True
+42,semantic_scholar,3f0ec5aacbe55fa4535a522b747e5211447f8ffc,Explainable artificial intelligence for Healthcare applications using Random Forest Classifier with LIME and SHAP,2023,10.48550/arXiv.2311.05665,True
+43,semantic_scholar,46ce9c8e1423a9af8ba84e86f44dc0e49da366ce,Adaptation of Federated Explainable Artificial Intelligence for Efficient and Secure E-Healthcare Systems,2024,10.32604/cmc.2024.046880,False
+44,semantic_scholar,7fe0c1515d951bbe77e5c12eb436f5a91fc5931f,A Deep Learning and Explainable Artificial Intelligence based Scheme for Breast Cancer Detection,2025,10.1038/s41598-024-80535-7,True
+45,semantic_scholar,700b8298d20cd34305d76e12bc94948fd4522b53,Editorial: Explainable artificial intelligence for critical healthcare applications,2023,10.3389/frai.2023.1282800,True
+46,semantic_scholar,afe312b66035501754a9d4fb4aa36e7a985cdfdc,Explainable Artificial Intelligence for Biomedical and Healthcare Applications,2024,10.1201/9781003220107,False
+47,semantic_scholar,ffe1458418ba93a2ea08ebabd52b21c8dba31549,Visualizing Research on Explainable Artificial Intelligence for Medical and Healthcare,2023,10.1109/iCoMET57998.2023.10099343,True
+48,semantic_scholar,c9526eabe882263c8e54db79b384aa3b74ac3045,A systematic review of explainable artificial intelligence methods for speech-based cognitive decline detection,2025,10.1038/s41746-025-02105-z,True
+49,semantic_scholar,9c31eccf66635d09e0a5586986be5f79270f0763,An improved explainable artificial intelligence tool in healthcare for hospital recommendation,2023,10.1016/j.health.2023.100147,False
+50,semantic_scholar,df9b9ba53bf8e2eb651f614510b80d986002bf8d,Transformative impact of explainable artificial intelligence: bridging complexity and trust,2025,10.1007/s44163-025-00281-1,True
+51,semantic_scholar,839957c7c3911d462f7698a6e5a9ca0d5718e100,Evaluating the sustainability of smart technology applications in healthcare after the COVID-19 pandemic: A hybridising subjective and objective fuzzy group decision-making approach with explainable artificial intelligence,2022,10.1177/20552076221136381,True
+52,semantic_scholar,fb4b16bb22b8898c118412f32fad5601741fb05e,A scoping review of explainable artificial intelligence in sports science,2025,10.1007/s44163-025-00709-8,True
+53,semantic_scholar,d49abcd4c3cf05df5aae535bb90e8e805c00aff2,"Explainable artificial intelligence: A survey of needs, techniques, applications, and future direction",2024,10.1016/j.neucom.2024.128111,True
+54,semantic_scholar,19de417754f10ccdfe45c113c75044afe21fa992,Editorial: Explainable artificial intelligence models and methods in finance and healthcare,2022,10.3389/frai.2022.970246,True
+55,semantic_scholar,bec1eac7ade48f5a9e40d05ce95a54e272eecfb0,Unveiling the Algorithm: The Role of Explainable Artificial Intelligence in Modern Surgery,2025,10.3390/healthcare13243208,True
+56,semantic_scholar,f28f5b4c67b18be74aa3b48659031eb1e31443fa,Harnessing Explainable Artificial Intelligence (XAI) based SHAPLEY Values and Ensemble Techniques for Accurate Alzheimer's Disease Diagnosis,2025,10.48084/etasr.9619,True
+57,semantic_scholar,1c9f96e44e7138049b53ff9cfe593b7f95f44f53,A Survey on Explainable Artificial Intelligence (XAI) Techniques for Visualizing Deep Learning Models in Medical Imaging,2024,10.3390/jimaging10100239,True
+58,semantic_scholar,5ad794b62328294f7a86890a1fd4f4c53e7d3037,Corrigendum: Editorial: Explainable artificial intelligence models and methods in finance and healthcare,2023,10.3389/frai.2023.1157762,True
+59,semantic_scholar,d93ad68271bb7a0c65dd4dbd41c425d90348e07a,"Explainable Artificial Intelligence in Healthcare: Opportunities, Gaps and Challenges and a Novel Way to Look at the Problem Space",2021,10.1007/978-3-030-91608-4_33,False
+60,semantic_scholar,11112229889edb04633731b4f218a8d56e2a15ee,Evaluating Explainable Artificial Intelligence (XAI) techniques in chest radiology imaging through a human-centered Lens,2024,10.1371/journal.pone.0308758,True
+61,semantic_scholar,556991c703ebe96424f8698497bd6a6e7b2fde1d,Explainable Artificial Intelligence (Al) through human-AI collaborative frameworks: Quantifying trust and interpretability in high-stakes decisions,2025,10.51594/csitrj.v6i5.1934,True
+62,semantic_scholar,959e56c8323c2d1b27c9b5bb87062398264cd36f,Exploring the Landscape of Explainable Artificial Intelligence (XAI): A Systematic Review of Techniques and Applications,2024,10.3390/bdcc8110149,True
+63,semantic_scholar,1e31e2132c1bb8aea8ecb4f2fb735a8901c5b943,NextGen lung disease diagnosis with explainable artificial intelligence,2025,10.1038/s41598-025-07603-4,True
+64,semantic_scholar,59e6f76680499eb87e53c37daed00f4baa166c28,The ethics of non-explainable artificial intelligence: an overview for clinical nurses.,2025,10.12968/bjon.2024.0394,True
+65,semantic_scholar,7a09e21059f00d8f5e4b7b2228bf1700c188a263,"Developing an Explainable Artificial Intelligence System for the Mobile-Based Diagnosis of Febrile Diseases Using Random Forest, LIME, and GPT",2025,10.4258/hir.2025.31.2.125,True
+66,semantic_scholar,346f01d78a4ce4a47781eb49ae044668d7b50fa7,"Explainable Artificial Intelligence: A Comprehensive Review of Techniques, Applications, and Emerging Trends",2025,10.26438/ijsrcse.v13i4.740,True
+67,semantic_scholar,ac445ef80fc8f5a219d32706bc79d5f634d67d92,A Survey of the Application of Explainable Artificial Intelligence in Biomedical Informatics,2025,10.3390/app152412934,True
+68,semantic_scholar,5e9ebbba8c5b6101b5aa24456aa492f9f70f348b,SmartScanPCOS: A feature-driven approach to cutting-edge prediction of Polycystic Ovary Syndrome using Machine Learning and Explainable Artificial Intelligence,2024,10.1016/j.heliyon.2024.e39205,True
+69,semantic_scholar,a0a5bab3e98f8d8df06b99bf38d8fcad2e12e1c5,Incorporating Explainable Artificial Intelligence (XAI) to aid the Understanding of Machine Learning in the Healthcare Domain,2020,,False
+70,semantic_scholar,05aae448e22849d56418fefb06ca810836e27a69,Trustworthy deep learning for malaria diagnosis using explainable artificial intelligence,2025,10.1038/s41598-025-28387-7,True
+71,semantic_scholar,a84c5c27b776ca636f2c5ed120e8fcf7669224b0,Detection of sickle cell disease using deep neural networks and explainable artificial intelligence,2024,10.1515/jisys-2023-0179,True
+72,semantic_scholar,33158e438cc21757869cdb447bcd03af7b79f7e9,The application of explainable artificial intelligence (XAI) in electronic health record research: A scoping review,2024,10.1177/20552076241272657,True
+73,semantic_scholar,c336299b31ff2c667d6025afd09e0ece6544ddc8,Explainable artificial intelligence-driven gestational diabetes mellitus prediction using clinical and laboratory markers,2024,10.1080/23311916.2024.2330266,True
+74,semantic_scholar,1943a5ed302536d88b93c8a7a593bd60775bb6bf,Breast Cancer Diagnosis: A Comprehensive Exploration of Explainable Artificial Intelligence (XAI) Techniques,2024,10.1109/ACCESS.2025.3639184,True
+75,semantic_scholar,f3f2a38d41b098f93f7fc6a25067f1b44ebe4a59,Explainable Artificial Intelligence in Quantifying Breast Cancer Factors: Saudi Arabia Context,2024,10.3390/healthcare12101025,True
+76,semantic_scholar,eac396535483234223fc3e71dd3e53168ed9b5bd,Predicting lung cancer risk using explainable artificial intelligence,2024,10.11591/eei.v13i2.6280,True
+77,semantic_scholar,044a0ddac6aaeaa518e79a1bbab929a97a6c9994,An interpretable schizophrenia diagnosis framework using machine learning and explainable artificial intelligence,2024,10.1080/21642583.2024.2364033,True
+78,semantic_scholar,8c28559672361149bf314804e22ed953bfebb6b8,Explainable Artificial Intelligence on Biosignals for Clinical Decision Support,2024,10.1145/3637528.3671459,True
+79,semantic_scholar,f28a73962f196ec175816e778e8dd946fdcf13a6,Explainable Artificial Intelligence (XAI) Techniques To Enhance Transparency In Deep Learning Models,2024,10.9790/0661-2606012936,True
+80,semantic_scholar,10b694d0ba5bd4537de36f4d113f68627b8b2691,Smart Vision Transparency: Efficient Ocular Disease Prediction Model Using Explainable Artificial Intelligence,2024,10.3390/s24206618,True
+81,semantic_scholar,fe70262ce7e8d2f8c753315fee8fefadcacbf569,Explainable artificial intelligence for medical imaging: Review and experiments with infrared breast images,2024,10.1111/coin.12660,True
+82,semantic_scholar,20f2277a87abb669f55fe3fa67b0d61e036c5552,DeepXplainer: An interpretable deep learning based approach for lung cancer detection using explainable artificial intelligence,2023,10.1016/j.cmpb.2023.107879,True
+83,semantic_scholar,691df1ede73cff8aaab5228368ea1e24807d788c,A Review of Trustworthy and Explainable Artificial Intelligence (XAI),2023,10.1109/ACCESS.2023.3294569,True
+84,semantic_scholar,106bcd930e4606f983507a0bed24ab8c909a572f,"Explainable Artificial Intelligence into Cyber-Physical System Architecture of Smart Cities: Technologies, Challenges, and Opportunities",2024,10.52783/jes.2000,True
+85,semantic_scholar,d31df8b4069678e2f32790670e2f4702f596f347,Explainable Artificial Intelligence by Genetic Programming: A Survey,2023,10.1109/TEVC.2022.3225509,True
+86,semantic_scholar,74f0f374003e296536a2c6ed5f50e1e2db13d44c,Investigating the Effects of the COVID-19 Pandemic on Stock Volatility in Sub-Saharan Africa: Analysis Using Explainable Artificial Intelligence,2024,10.3390/economies12050112,True
+87,semantic_scholar,4785f055980c9b7188b481133eeb2348dca39853,Explainable Artificial Intelligence based ML Models for Heart Disease Prediction,2024,10.1109/ICCMSO61761.2024.00042,True
+88,semantic_scholar,d499aef63ad41295dd9f164d880f617610da1c1c,"Enhancing Interpretability, Reliability and Trustworthiness: Applications of Explainable Artificial Intelligence in Medical Imaging, Financial Markets, and Sentiment Analysis",2024,10.1109/ECAI61503.2024.10607516,True
+89,semantic_scholar,01ece2b963a6d334dfb0ba50ad096567ca1766c1,A Secure and Reliable Framework for Explainable Artificial Intelligence (XAI) in Smart City Applications,2024,10.48084/etasr.7676,True
+90,semantic_scholar,77d942cfa2d4b9266080258943048825e7449ad2,Survey of explainable artificial intelligence techniques for biomedical imaging with deep neural networks,2023,10.1016/j.compbiomed.2023.106668,True
+91,semantic_scholar,cd537c93acca44e3962c5246d1b15cb5ea132f9a,Exploring transparency: A comparative analysis of explainable artificial intelligence techniques in retinography images to support the diagnosis of glaucoma,2024,10.1016/j.compbiomed.2024.109556,True
+92,semantic_scholar,2b3116944b0d6fbc0e48a9f458d043d16b3556fe,Leveraging Explainable Artificial Intelligence (XAI) Methods Supporting Local and Global Explainability for Smart Grids,2024,10.1109/GEC61857.2024.10881108,True
+93,semantic_scholar,c483beec0afae8d08f011182460095049025b8d1,Opportunities and Challenges in Explainable Artificial Intelligence (XAI): A Survey,2020,,True
+94,semantic_scholar,9cf5bf7847155c32c075449fdccfd7f2afe17219,"Explainable artificial intelligence (XAI) in medical imaging: a systematic review of techniques, applications, and challenges",2026,10.1186/s12880-025-02118-w,True
+95,semantic_scholar,5c9566d46ccb1ab640df3df4406ee4c05230337e,Towards Industrial Revolution 5.0 and Explainable Artificial Intelligence: Challenges and Opportunities,2022,10.12785/ijcds/120128,True
+96,semantic_scholar,8bb95452cdc553246bddb89861b2442fc3cd775d,Tuberculosis detection in chest radiograph using convolutional neural network architecture and explainable artificial intelligence,2022,10.1007/s00521-022-07258-6,True
+97,semantic_scholar,734bd61cc2736a8ce0daa45e7d6c868cbdb59fa1,"Utilizing artificial intelligence to predict and analyze socioeconomic, environmental, and healthcare factors driving tuberculosis globally",2025,10.1038/s41598-025-96973-w,True
+98,arxiv,2604.16340,How Can Explainable Artificial Intelligence Improve Trust and Transparency in Medical Diagnosis Systems?,2026,,True
+99,arxiv,2410.18725,AI Readiness in Healthcare through Storytelling XAI,2024,,True
+100,arxiv,2102.01116,Diagnosis of Acute Poisoning Using Explainable Artificial Intelligence,2021,,True
+101,arxiv,2206.04800,Explainable Artificial Intelligence (XAI) for Internet of Things: A Survey,2022,,True
+102,arxiv,2308.09380,Deciphering knee osteoarthritis diagnostic features with explainable artificial intelligence: A systematic review,2023,,True
+103,arxiv,2307.00364,The future of human-centric eXplainable Artificial Intelligence (XAI) is not post-hoc explanations,2023,,True
+104,arxiv,2605.02903,A User-Centric Analysis of Explainability in AI-Based Medical Image Diagnosis,2026,,True
+105,arxiv,2412.01829,Explainable Artificial Intelligence for Medical Applications: A Review,2024,,True
+106,arxiv,2212.07058,Explainable Artificial Intelligence in Retinal Imaging for the detection of Systemic Diseases,2022,,True
+107,arxiv,2502.14116,SALTY: Explainable Artificial Intelligence Guided Structural Analysis for Hardware Trojan Detection,2025,,True
+108,arxiv,2006.13427,Using Deep Learning and Explainable Artificial Intelligence in Patients' Choices of Hospital Levels,2020,,True
+109,arxiv,2402.07915,Research on Older Adults' Interaction with E-Health Interface Based on Explainable Artificial Intelligence,2024,,True
+110,arxiv,2312.11507,Explain To Decide: A Human-Centric Review on the Role of Explainable Artificial Intelligence in AI-assisted Decision Making,2023,,True
+111,arxiv,2111.00601,Explainable Artificial Intelligence for Smart City Application: A Secure and Trusted Platform,2021,,True
+112,arxiv,2208.14937,Explainable Artificial Intelligence Applications in Cyber Security: State-of-the-Art in Research,2022,10.1109/ACCESS.2022.3204051,True
+113,arxiv,2407.17165,Explainable Artificial Intelligence Techniques for Irregular Temporal Classification of Multidrug Resistance Acquisition in Intensive Care Unit Patients,2024,,True
+114,arxiv,2410.00366,Easydiagnos: a framework for accurate feature selection for automatic diagnosis in smart healthcare,2024,,True
+115,arxiv,2011.03195,Explainable AI meets Healthcare: A Study on Heart Disease Dataset,2020,,True
+116,arxiv,2506.13904,A Systematic Review of User-Centred Evaluation of Explainable AI in Healthcare,2025,,True
+117,arxiv,2105.12497,Designing ECG Monitoring Healthcare System with Federated Transfer Learning and Explainable AI,2021,10.1016/j.knosys.2021.107763,True
+118,arxiv,2508.05753,"Explainable AI in Healthcare: to Explain, to Predict, or to Describe?",2025,,True
+119,arxiv,2404.12832,COIN: Counterfactual inpainting for weakly supervised semantic segmentation for medical images,2024,10.1007/978-3-031-63800-8_3,True
+120,arxiv,2306.02312,(Un)reasonable Allure of Ante-hoc Interpretability for High-stakes Domains: Transparency Is Necessary but Insufficient for Comprehensibility,2023,,True
+121,arxiv,2606.26202,Crime reduction through public healthcare: Interpretable machine learning for mental health service impacts in Greater London,2026,,True
+122,arxiv,1911.10104,Towards Quantification of Explainability in Explainable Artificial Intelligence Methods,2019,,True
+123,arxiv,2504.08552,Towards an Evaluation Framework for Explainable Artificial Intelligence Systems for Health and Well-being,2025,,True
+124,arxiv,2401.17511,Linguistically Communicating Uncertainty in Patient-Facing Risk Prediction Models,2024,,True
+125,arxiv,2306.01750,A Survey of Explainable AI and Proposal for a Discipline of Explanation Engineering,2023,,True
+126,arxiv,2502.07347,Quantifying Information Loss under Coarse-Grained Partitions: A Discrete Framework for Explainable Artificial Intelligence,2025,,True
+127,arxiv,2604.09578,Explainable Planning for Hybrid Systems,2026,,True
+128,arxiv,2502.17999,GNN-XAR: A Graph Neural Network for Explainable Activity Recognition in Smart Homes,2025,10.1007/978-3-032-10554-7,True
+129,arxiv,2302.10671,Directive Explanations for Monitoring the Risk of Diabetes Onset: Introducing Directive Data-Centric Explanations and Combinations to Support What-If Explorations,2023,10.1145/3581641.3584075,True
+130,arxiv,2412.17527,Enhancing Cancer Diagnosis with Explainable & Trustworthy Deep Learning Models,2024,,True
+131,arxiv,2309.09917,Evaluation of Human-Understandability of Global Model Explanations using Decision Tree,2023,10.1007/978-3-031-50396-2_3,True
+132,arxiv,2312.10696,An Interpretable Deep Learning Approach for Skin Cancer Categorization,2023,,True
+133,arxiv,2102.01998,"Unbox the Black-box for the Medical Explainable AI via Multi-modal and Multi-centre Data Fusion: A Mini-Review, Two Showcases and Beyond",2021,,True
+134,arxiv,2308.16113,survex: an R package for explaining machine learning survival models,2023,10.1093/bioinformatics/btad723,True
+135,arxiv,2208.08739,Transcending XAI Algorithm Boundaries through End-User-Inspired Design,2022,,True
+136,arxiv,2401.17477,Detecting mental disorder on social media: a ChatGPT-augmented explainable approach,2024,10.1016/j.osnem.2025.100321,True
+137,arxiv,2106.10191,Rational Shapley Values,2021,10.1145/3531146.3533170,True
+138,arxiv,2307.05104,A Deep Dive into Perturbations as Evaluation Technique for Time Series XAI,2023,,True
+139,arxiv,2309.00252,Interpretable Medical Imagery Diagnosis with Self-Attentive Transformers: A Review of Explainable AI for Health Care,2023,,True
+140,arxiv,2509.16685,Towards a Transparent and Interpretable AI Model for Medical Image Classifications,2025,10.1007/s11571-025-10343-w,True
+141,arxiv,2408.05239,"The Literature Review Network: An Explainable Artificial Intelligence for Systematic Literature Reviews, Meta-analyses, and Method Development",2024,,True
+142,arxiv,2603.15373,GradCFA: A Hybrid Gradient-Based Counterfactual and Feature Attribution Explanation Algorithm for Local Interpretation of Neural Networks,2026,10.1109/TAI.2025.3552057,True
+143,arxiv,2508.09639,UbiQTree: Uncertainty Quantification in XAI with Tree Ensembles,2025,10.1016/j.patter.2025.101454,True
+144,arxiv,1905.11474,"Infusing domain knowledge in AI-based ""black box"" models for better explainability with application in bankruptcy prediction",2019,,True
+145,arxiv,2504.19027,DiCE-Extended: A Robust Approach to Counterfactual Explanations in Machine Learning,2025,,True
+146,arxiv,2302.06609,Invisible Users: Uncovering End-Users' Requirements for Explainable AI via Explanation Forms and Goals,2023,,True
+147,arxiv,2303.06640,Challenges facing the explainability of age prediction models: case study for two modalities,2023,,True
+148,arxiv,2403.09410,XCoOp: Explainable Prompt Learning for Computer-Aided Diagnosis via Concept-guided Context Optimization,2024,,True
+149,arxiv,2603.06485,PONTE: Personalized Orchestration for Natural Language Trustworthy Explanations,2026,,True
+150,arxiv,2604.09799,Explainable Human Activity Recognition: A Unified Review of Concepts and Mechanisms,2026,,True
+151,arxiv,2512.07178,ContextualSHAP : Enhancing SHAP Explanations Through Contextual Language Generation,2025,10.1145/3779657.3779691,True
+152,arxiv,2305.05525,Exploring a Gradient-based Explainable AI Technique for Time-Series Data: A Case Study of Assessing Stroke Rehabilitation Exercises,2023,,True
+153,arxiv,2406.13584,FreqRISE: Explaining time series using frequency masking,2024,,True
+154,arxiv,2403.04130,An Explainable AI Framework for Artificial Intelligence of Medical Things,2024,,True
+155,arxiv,2109.15125,Visualisation to Explain Personal Health Trends in Smart Homes,2021,,True
+156,arxiv,2608.27821,Actionable CBFI: Integrating Structural Decomposition and Causal Counterfactual Recourse for Tabular Machine Learning,2026,,True
+157,arxiv,2403.15684,The Limits of Perception: Analyzing Inconsistencies in Saliency Maps in XAI,2024,,True
+158,arxiv,2502.02618,Deep Learning-Based Facial Expression Recognition for the Elderly: A Systematic Review,2025,,True
+159,arxiv,2401.15840,Emergent Explainability: Adding a causal chain to neural network inference,2024,,True
+160,arxiv,2408.00753,A deep learning-enabled smart garment for accurate and versatile sleep conditions monitoring in daily life,2024,10.1073/pnas.2420498122,True
+161,arxiv,2510.19514,From Prototypes to Sparse ECG Explanations: SHAP-Driven Counterfactuals for Multivariate Time-Series Multi-class Classification,2025,,True
+162,arxiv,2501.06077,Explainable Federated Bayesian Causal Inference and Its Application in Advanced Manufacturing,2025,,True
+163,arxiv,2608.07091,Human-Centered Explainable AI for TinyML Edge Devices: A Pareto-Based Selection Framework with LLM-Guided Design,2026,,True
+164,arxiv,2411.14471,Leveraging Gene Expression Data and Explainable Machine Learning for Enhanced Early Detection of Type 2 Diabetes,2024,,True
+165,arxiv,2403.09752,Explainable Machine Learning-Based Security and Privacy Protection Framework for Internet of Medical Things Systems,2024,,True
+166,arxiv,2412.00800,A Comprehensive Guide to Explainable AI: From Classical Models to LLMs,2024,,True
+167,arxiv,2205.04599,Perception-Aligned AI Outputs: End-to-End Visual Prediction for Uncertainty Communication in Clinical Decision-Making,2022,,True
+168,arxiv,2404.03892,Enhancing Breast Cancer Diagnosis in Mammography: Evaluation and Integration of Convolutional Neural Networks and Explainable AI,2024,,True
+169,arxiv,2501.16357,EVolutionary Independent DEtermiNistiC Explanation,2025,,True
+170,arxiv,2511.00246,Melanoma Classification Through Deep Ensemble Learning and Explainable AI,2025,10.5220/0012575400003657,True
+171,arxiv,2504.04549,Opening the black box of deep learning: Validating the statistical association between explainable artificial intelligence (XAI) and clinical domain knowledge in fundus image-based glaucoma diagnosis,2025,,True
+172,arxiv,2308.11446,Exploration of the Rashomon Set Assists Trustworthy Explanations for Medical Data,2023,,True
+173,arxiv,2310.01828,Trainable Noise Model as an XAI evaluation method: application on Sobol for remote sensing image segmentation,2023,,True
+174,arxiv,2404.13419,Reconciling Explanations in Multi-Model Systems through Probabilistic Argumentation,2024,,True
+175,arxiv,2505.08198,SIM-Shapley: A Stable and Computationally Efficient Approach to Shapley Value Approximation,2025,,True
+176,arxiv,2011.04049,FairLens: Auditing Black-box Clinical Decision Support Systems,2020,,True
+177,arxiv,2311.14139,Machine Learning For An Explainable Cost Prediction of Medical Insurance,2023,,True
+178,arxiv,2307.07603,Gastrointestinal Disease Classification through Explainable and Cost-Sensitive Deep Neural Networks with Supervised Contrastive Learning,2023,,True
+179,arxiv,2606.05710,Explainable AI-Driven Cyber Risk Analytics and Model Reliability Assessment for Intelligent Governance of U.S. Critical Infrastructure: An XGBoost and SHAP-Based Intrusion Detection Framework,2026,10.25163/engineering.2110762,True
+180,arxiv,2212.13261,"Explainable AI for Bioinformatics: Methods, Tools, and Applications",2022,,True
+181,arxiv,2511.08361,From Confusion to Clarity: ProtoScore -- A Framework for Evaluating Prototype-Based XAI,2025,10.1145/3715275.3732151,True
+182,arxiv,2506.07228,Transfer Learning and Explainable AI for Brain Tumor Classification: A Study Using MRI Data from Bangladesh,2025,10.1109/STI64222.2024.10951092,True
+183,arxiv,2408.12420,Dataset | Mindset = Explainable AI | Interpretable AI,2024,,True
+184,arxiv,2012.00093,Why model why? Assessing the strengths and limitations of LIME,2020,,True
+185,arxiv,2501.12706,REX: Causal discovery based on machine learning and explainability techniques,2025,10.1016/j.patcog.2025.112491,True
+186,arxiv,2306.11985,Evaluation of Popular XAI Applied to Clinical Prediction Models: Can They be Trusted?,2023,,True
+187,arxiv,2503.06463,AXAI-CDSS : An Affective Explainable AI-Driven Clinical Decision Support System for Cannabis Use,2025,,True

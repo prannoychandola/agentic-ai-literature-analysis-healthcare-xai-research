@@ -1,0 +1,974 @@
+{
+  "metadata": {
+    "timestamp": "2026-09-06T09:17:44.872005+00:00",
+    "corpus_size": 187,
+    "papers_with_abstracts": 175,
+    "paper_ids_with_candidate_evidence": 64,
+    "statement": "This artifact performs potential/candidate research-gap identification and does not prove research gaps."
+  },
+  "method": {
+    "external_apis_used": false,
+    "llm_used": false,
+    "evidence_extraction_rules": {
+      "limitation_terms": [
+        "limitation",
+        "limitations",
+        "limited",
+        "lack of",
+        "lacks",
+        "insufficient",
+        "challenge",
+        "challenges",
+        "difficulty",
+        "difficult",
+        "constraint",
+        "weakness",
+        "drawback"
+      ],
+      "future_work_terms": [
+        "future work",
+        "future research",
+        "further work",
+        "further research",
+        "should be investigated",
+        "should be explored",
+        "remains to be explored",
+        "needs further",
+        "requires further",
+        "we plan to",
+        "future studies"
+      ],
+      "theme_terms": {
+        "external_validation_generalization": [
+          "generalizability",
+          "generalisation",
+          "generalization",
+          "external validation",
+          "external dataset",
+          "independent dataset",
+          "multi-center",
+          "multicenter",
+          "prospective",
+          "real-world",
+          "clinical validation",
+          "clinical deployment"
+        ],
+        "clinical_utility_human_validation": [
+          "interpretability",
+          "explainability",
+          "explanation",
+          "transparency",
+          "clinician",
+          "clinical utility",
+          "trust",
+          "usability",
+          "user study"
+        ],
+        "robustness_fairness_uncertainty": [
+          "robustness",
+          "reliability",
+          "fairness",
+          "bias",
+          "demographic",
+          "subgroup",
+          "uncertainty",
+          "calibration"
+        ],
+        "evaluation_reproducibility": [
+          "evaluation",
+          "evaluate",
+          "evaluated",
+          "validation",
+          "validated",
+          "benchmark",
+          "reproducibility",
+          "reproducible"
+        ]
+      },
+      "source_text": "abstract text from data/corpus.csv",
+      "direct_quote_policy": "Evidence marked as direct quotes is copied exactly from an abstract sentence."
+    },
+    "candidate_generation_rules": {
+      "minimum": "At least 3 supporting papers, or at least 2 explicit limitation/future-work passages.",
+      "keyword_presence_alone_is_not_evidence": true,
+      "cluster_size_is_not_primary_evidence": true
+    },
+    "confidence_rules": {
+      "HIGH": "At least 3 papers and at least 3 explicit limitation/future-work passages.",
+      "MEDIUM": "At least 2 supporting papers with reasonably consistent evidence.",
+      "LOW": "Limited or indirect evidence; never treated as proof.",
+      "allowed_labels": [
+        "HIGH",
+        "LOW",
+        "MEDIUM"
+      ]
+    },
+    "clustering_provenance": {
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+      "embedding_source": "C:\\Users\\prann\\workspace\\agentic-ai-xai-research\\outputs\\embeddings.npy",
+      "embedding_index_source": "C:\\Users\\prann\\workspace\\agentic-ai-xai-research\\outputs\\embedding_index.csv",
+      "embedding_dimension": 384,
+      "representation": "Title + Abstract",
+      "selected_k": 2,
+      "selected_k_silhouette": 0.06542618572711945,
+      "clustering_statement": "Cluster membership is contextual structural evidence only and does not establish a research gap.",
+      "stability_context": {
+        "source": "C:\\Users\\prann\\workspace\\agentic-ai-xai-research\\outputs\\stability_results.json",
+        "selected_k_frequency": {
+          "2": 7,
+          "3": 0,
+          "4": 1,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0
+        },
+        "k2_pairwise_ari": {
+          "mean_pairwise_ari": 0.918258085681945,
+          "std_pairwise_ari": 0.03927922204318397,
+          "minimum_pairwise_ari": 0.8453197683730787,
+          "maximum_pairwise_ari": 1.0
+        }
+      }
+    },
+    "clustering_limitation": "Semantic clusters provide contextual structure only and do not establish a gap."
+  },
+  "candidate_gaps": [
+    {
+      "gap_id": "GAP-01",
+      "gap_statement": "Potential gap hypothesis: external validation and generalizability of healthcare XAI methods remain insufficiently addressed across the reviewed studies.",
+      "gap_type": "generalization and external validation",
+      "confidence": "HIGH",
+      "supporting_paper_ids": [
+        "fb4b16bb22b8898c118412f32fad5601741fb05e",
+        "ac445ef80fc8f5a219d32706bc79d5f634d67d92",
+        "05aae448e22849d56418fefb06ca810836e27a69",
+        "2410.18725",
+        "2504.19027",
+        "2502.02618"
+      ],
+      "supporting_titles": [
+        "A scoping review of explainable artificial intelligence in sports science",
+        "A Survey of the Application of Explainable Artificial Intelligence in Biomedical Informatics",
+        "Trustworthy deep learning for malaria diagnosis using explainable artificial intelligence",
+        "AI Readiness in Healthcare through Storytelling XAI",
+        "DiCE-Extended: A Robust Approach to Counterfactual Explanations in Machine Learning",
+        "Deep Learning-Based Facial Expression Recognition for the Elderly: A Systematic Review"
+      ],
+      "supporting_evidence": [
+        {
+          "paper_id": "fb4b16bb22b8898c118412f32fad5601741fb05e",
+          "evidence_type": "explicit future work",
+          "evidence": "To increase real-world impact, future work should explore comparative evaluations of XAI techniques, domain-specific explanation frameworks, and user-centered approaches that align with the needs of coaches, athletes, and analysts.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "ac445ef80fc8f5a219d32706bc79d5f634d67d92",
+          "evidence_type": "explicit limitation",
+          "evidence": "Through a systematic analysis of 43 peer-reviewed articles, we examine current trends, as well as the strengths and limitations of methodologies currently used in real-world healthcare settings.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "05aae448e22849d56418fefb06ca810836e27a69",
+          "evidence_type": "explicit limitation",
+          "evidence": "The proposed AI-based diagnostic framework thus demonstrates high accuracy, interpretability, and generalization, representing a scalable solution for malaria detection in resource-limited healthcare settings.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2410.18725",
+          "evidence_type": "explicit limitation",
+          "evidence": "Despite this trend, the adoption of AI in real-world healthcare is still limited.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2504.19027",
+          "evidence_type": "explicit future work",
+          "evidence": "Future work could explore adaptive optimization techniques and domain-specific constraints to further enhance CF generation in real-world scenarios",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2502.02618",
+          "evidence_type": "explicit limitation",
+          "evidence": "However, existing datasets often lack diversity in age representation, and real-world deployment remains limited.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2502.02618",
+          "evidence_type": "explicit future work",
+          "evidence": "We conclude by offering recommendations for future research to bridge the gap between academic progress and real-world implementation in elderly care.",
+          "is_direct_quote": true
+        }
+      ],
+      "evidence_count": 7,
+      "evidence_sources": [
+        "abstract"
+      ],
+      "rationale": "This candidate is an evidence-supported hypothesis based on 6 independent paper(s) and 7 explicit limitation/future-work passage(s).",
+      "caveat": "This is potential research-gap identification, not a proven or confirmed gap. The evidence is abstract-level and requires further investigation and domain review.",
+      "cluster_context": {
+        "not_used_as_primary_evidence": true,
+        "statement": "Cluster membership is contextual only and does not establish this candidate gap."
+      }
+    },
+    {
+      "gap_id": "GAP-02",
+      "gap_statement": "Potential gap hypothesis: clinical utility, clinician-facing validation, and real-world usability of healthcare XAI explanations remain insufficiently evaluated across the reviewed studies.",
+      "gap_type": "clinical utility and human validation",
+      "confidence": "HIGH",
+      "supporting_paper_ids": [
+        "6cc7bcd5f0a3fc408c5f4fa97fe638ef03dd7fab",
+        "3b54c7037005fbb4e827e8787a024dd18e0dd619",
+        "747ce5b1d0178cb08dcf48e43f738f1476876ed5",
+        "f975e61108df93736dc63e50b4a132b7023b0ccd",
+        "1d5831e7b535d4a26efcc730c92bf6e964d602ba",
+        "a1b5e4b4a430058e33498e4d842734344d1fb7f9",
+        "47ead100d2f049e0b32fd1a449e23d10176a8c38",
+        "682d9147abcd9a7b1bd536dcdbf2319a75529c54",
+        "b89fc2186636ef33f09a1a34315227286a70197b",
+        "a4b0744a93fee40f1e16904af16e06294eff0dcd",
+        "421cebc60f864bdfa680bd1021b22c608b480650",
+        "cf7bd780cc164e913ca9a40753fdb7169bbf826a",
+        "449440154af5b6cadc5fc28c3b76dcb32b193010",
+        "52053dc5883fdc2259b210277fd2f0cfb8363cbf",
+        "3f0ec5aacbe55fa4535a522b747e5211447f8ffc",
+        "7fe0c1515d951bbe77e5c12eb436f5a91fc5931f",
+        "c9526eabe882263c8e54db79b384aa3b74ac3045",
+        "df9b9ba53bf8e2eb651f614510b80d986002bf8d",
+        "fb4b16bb22b8898c118412f32fad5601741fb05e",
+        "d49abcd4c3cf05df5aae535bb90e8e805c00aff2",
+        "bec1eac7ade48f5a9e40d05ce95a54e272eecfb0",
+        "556991c703ebe96424f8698497bd6a6e7b2fde1d",
+        "959e56c8323c2d1b27c9b5bb87062398264cd36f",
+        "59e6f76680499eb87e53c37daed00f4baa166c28",
+        "ac445ef80fc8f5a219d32706bc79d5f634d67d92",
+        "05aae448e22849d56418fefb06ca810836e27a69",
+        "eac396535483234223fc3e71dd3e53168ed9b5bd",
+        "f28a73962f196ec175816e778e8dd946fdcf13a6",
+        "10b694d0ba5bd4537de36f4d113f68627b8b2691",
+        "d499aef63ad41295dd9f164d880f617610da1c1c",
+        "cd537c93acca44e3962c5246d1b15cb5ea132f9a",
+        "c483beec0afae8d08f011182460095049025b8d1",
+        "2206.04800",
+        "2308.09380",
+        "2312.11507",
+        "2111.00601",
+        "2410.00366",
+        "2011.03195",
+        "2306.02312",
+        "1911.10104",
+        "2102.01998",
+        "1905.11474",
+        "2504.19027",
+        "2604.09799",
+        "2109.15125",
+        "2510.19514",
+        "2412.00800",
+        "2404.03892",
+        "2511.00246",
+        "2404.13419",
+        "2212.13261",
+        "2506.07228",
+        "2306.11985",
+        "2503.06463"
+      ],
+      "supporting_titles": [
+        "Synergizing advanced algorithm of explainable artificial intelligence with hybrid model for enhanced brain tumor detection in healthcare",
+        "Application of explainable artificial intelligence for healthcare: A systematic review of the last decade (2011-2022)",
+        "Explainable Artificial Intelligence (XAI): Concepts and Challenges in Healthcare",
+        "Essential properties and explanation effectiveness of explainable artificial intelligence in healthcare: A systematic review",
+        "Explainable Artificial Intelligence (XAI) in Healthcare: Enhancing Transparency and Trust",
+        "The role of explainable artificial intelligence in disease prediction: a systematic literature review and future research directions",
+        "Explainable Artificial Intelligence in Neuroimaging of Alzheimer’s Disease",
+        "Explainable Artificial Intelligence for Predictive Modeling in Healthcare",
+        "A Literature Review on Applications of Explainable Artificial Intelligence (XAI)",
+        "Explainable artificial intelligence (XAI): from inherent explainability to large language models",
+        "Explainable Artificial Intelligence: A Perspective on Drug Discovery",
+        "A Review of Explainable Artificial Intelligence from the Perspectives of Challenges and Opportunities",
+        "Developing a Transparent Anaemia Prediction Model Empowered With Explainable Artificial Intelligence",
+        "Development of explainable artificial intelligence based machine learning model for predicting 30-day hospital readmission after renal transplantation",
+        "Explainable artificial intelligence for Healthcare applications using Random Forest Classifier with LIME and SHAP",
+        "A Deep Learning and Explainable Artificial Intelligence based Scheme for Breast Cancer Detection",
+        "A systematic review of explainable artificial intelligence methods for speech-based cognitive decline detection",
+        "Transformative impact of explainable artificial intelligence: bridging complexity and trust",
+        "A scoping review of explainable artificial intelligence in sports science",
+        "Explainable artificial intelligence: A survey of needs, techniques, applications, and future direction",
+        "Unveiling the Algorithm: The Role of Explainable Artificial Intelligence in Modern Surgery",
+        "Explainable Artificial Intelligence (Al) through human-AI collaborative frameworks: Quantifying trust and interpretability in high-stakes decisions",
+        "Exploring the Landscape of Explainable Artificial Intelligence (XAI): A Systematic Review of Techniques and Applications",
+        "The ethics of non-explainable artificial intelligence: an overview for clinical nurses.",
+        "A Survey of the Application of Explainable Artificial Intelligence in Biomedical Informatics",
+        "Trustworthy deep learning for malaria diagnosis using explainable artificial intelligence",
+        "Predicting lung cancer risk using explainable artificial intelligence",
+        "Explainable Artificial Intelligence (XAI) Techniques To Enhance Transparency In Deep Learning Models",
+        "Smart Vision Transparency: Efficient Ocular Disease Prediction Model Using Explainable Artificial Intelligence",
+        "Enhancing Interpretability, Reliability and Trustworthiness: Applications of Explainable Artificial Intelligence in Medical Imaging, Financial Markets, and Sentiment Analysis",
+        "Exploring transparency: A comparative analysis of explainable artificial intelligence techniques in retinography images to support the diagnosis of glaucoma",
+        "Opportunities and Challenges in Explainable Artificial Intelligence (XAI): A Survey",
+        "Explainable Artificial Intelligence (XAI) for Internet of Things: A Survey",
+        "Deciphering knee osteoarthritis diagnostic features with explainable artificial intelligence: A systematic review",
+        "Explain To Decide: A Human-Centric Review on the Role of Explainable Artificial Intelligence in AI-assisted Decision Making",
+        "Explainable Artificial Intelligence for Smart City Application: A Secure and Trusted Platform",
+        "Easydiagnos: a framework for accurate feature selection for automatic diagnosis in smart healthcare",
+        "Explainable AI meets Healthcare: A Study on Heart Disease Dataset",
+        "(Un)reasonable Allure of Ante-hoc Interpretability for High-stakes Domains: Transparency Is Necessary but Insufficient for Comprehensibility",
+        "Towards Quantification of Explainability in Explainable Artificial Intelligence Methods",
+        "Unbox the Black-box for the Medical Explainable AI via Multi-modal and Multi-centre Data Fusion: A Mini-Review, Two Showcases and Beyond",
+        "Infusing domain knowledge in AI-based \"black box\" models for better explainability with application in bankruptcy prediction",
+        "DiCE-Extended: A Robust Approach to Counterfactual Explanations in Machine Learning",
+        "Explainable Human Activity Recognition: A Unified Review of Concepts and Mechanisms",
+        "Visualisation to Explain Personal Health Trends in Smart Homes",
+        "From Prototypes to Sparse ECG Explanations: SHAP-Driven Counterfactuals for Multivariate Time-Series Multi-class Classification",
+        "A Comprehensive Guide to Explainable AI: From Classical Models to LLMs",
+        "Enhancing Breast Cancer Diagnosis in Mammography: Evaluation and Integration of Convolutional Neural Networks and Explainable AI",
+        "Melanoma Classification Through Deep Ensemble Learning and Explainable AI",
+        "Reconciling Explanations in Multi-Model Systems through Probabilistic Argumentation",
+        "Explainable AI for Bioinformatics: Methods, Tools, and Applications",
+        "Transfer Learning and Explainable AI for Brain Tumor Classification: A Study Using MRI Data from Bangladesh",
+        "Evaluation of Popular XAI Applied to Clinical Prediction Models: Can They be Trusted?",
+        "AXAI-CDSS : An Affective Explainable AI-Driven Clinical Decision Support System for Cannabis Use"
+      ],
+      "supporting_evidence": [
+        {
+          "paper_id": "6cc7bcd5f0a3fc408c5f4fa97fe638ef03dd7fab",
+          "evidence_type": "explicit limitation",
+          "evidence": "As understanding reasoning behind their predictions is still a great challenge for the healthcare professionals and raised a great concern about their trustworthiness, interpretability and transparency in clinical settings.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "3b54c7037005fbb4e827e8787a024dd18e0dd619",
+          "evidence_type": "explicit limitation",
+          "evidence": "This lack of trust remains the main reason for their low use in practice, especially in healthcare.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "747ce5b1d0178cb08dcf48e43f738f1476876ed5",
+          "evidence_type": "explicit limitation",
+          "evidence": "In this narrative review, we will have a look at some central concepts in XAI, describe several challenges around XAI in healthcare, and discuss whether it can really help healthcare to advance, for example, by increasing understanding and trust.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "747ce5b1d0178cb08dcf48e43f738f1476876ed5",
+          "evidence_type": "explicit future work",
+          "evidence": "Finally, alternatives to increase trust in AI are discussed, as well as future research possibilities in the area of XAI.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "f975e61108df93736dc63e50b4a132b7023b0ccd",
+          "evidence_type": "explicit limitation",
+          "evidence": "Conclusion XAI research should address the lack of a comprehensive and agreed-upon framework for explaining XAI and standardized approaches for evaluating the effectiveness of the explanation that XAI provides to diverse AI stakeholders.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "1d5831e7b535d4a26efcc730c92bf6e964d602ba",
+          "evidence_type": "explicit limitation",
+          "evidence": "However, most of these models are per se opaque-that is, the so-called \"black-box\" problem-there are still great challenges in areas such as transparency, trust, and ethical applications in a clinical setting.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "1d5831e7b535d4a26efcc730c92bf6e964d602ba",
+          "evidence_type": "explicit limitation",
+          "evidence": "This lack of interpretability can stand in the way of acceptance or integration for AI technologies when issues of understanding and accountability are relevant.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "a1b5e4b4a430058e33498e4d842734344d1fb7f9",
+          "evidence_type": "explicit limitation",
+          "evidence": "The review highlights key gaps, including limited dataset diversity, model complexity, and reliance on single data types, emphasizing the need for greater interpretability and data integration.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "47ead100d2f049e0b32fd1a449e23d10176a8c38",
+          "evidence_type": "explicit limitation",
+          "evidence": "However, the complexity and lack of interpretability of these models limit their clinical applicability.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "47ead100d2f049e0b32fd1a449e23d10176a8c38",
+          "evidence_type": "explicit limitation",
+          "evidence": "Explainable Artificial Intelligence (XAI) addresses this challenge by providing insights into model decision-making, enhancing transparency, and fostering trust in AI-driven diagnostics.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "682d9147abcd9a7b1bd536dcdbf2319a75529c54",
+          "evidence_type": "explicit limitation",
+          "evidence": "Although many of these artificial intelligence and machine learning algorithms can achieve remarkably high performance, it is often difficult to be completely adopted in practical clinical environments due to the lack of explainability in some of these algorithms.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "b89fc2186636ef33f09a1a34315227286a70197b",
+          "evidence_type": "explicit limitation",
+          "evidence": "Ultimately, this document underscores the critical challenges for XAI in fostering user trust, enhancing decision-making processes, and ensuring that AI technologies are utilized responsibly and ethically across various applications, paving the way for a more transparent and accountable AI landscape.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "a4b0744a93fee40f1e16904af16e06294eff0dcd",
+          "evidence_type": "explicit limitation",
+          "evidence": "This limitation hinders trust in machine learning systems and causes a general reluctance towards their adoption in practical applications, particularly in mission-critical domains like healthcare and autonomous driving.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "421cebc60f864bdfa680bd1021b22c608b480650",
+          "evidence_type": "explicit limitation",
+          "evidence": "Finally, we discuss the challenges in deploying XAI methodologies, focusing on critical research directions to improve transparency and interpretability in AI-driven drug discovery.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "cf7bd780cc164e913ca9a40753fdb7169bbf826a",
+          "evidence_type": "explicit limitation",
+          "evidence": "Its black-box (sub-symbolic) nature allows AI to compute prediction without explaining the rationale to the end user, resulting in lack of transparency between human and machine.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "cf7bd780cc164e913ca9a40753fdb7169bbf826a",
+          "evidence_type": "explicit limitation",
+          "evidence": "Special attention is given to various challenges of XAI, such as no universal definition, trade-off between accuracy and interpretability, and lack of standardized evaluation metrics.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "cf7bd780cc164e913ca9a40753fdb7169bbf826a",
+          "evidence_type": "explicit future work",
+          "evidence": "We conclude by outlining the future research directions of human-centric design, interactive explanation, and standardized evaluation frameworks.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "449440154af5b6cadc5fc28c3b76dcb32b193010",
+          "evidence_type": "explicit limitation",
+          "evidence": "In this research work, a transparent anaemia prediction model (white box) empowered by explainable AI techniques is proposed to address the limitations of black boxes in terms of transparency.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "52053dc5883fdc2259b210277fd2f0cfb8363cbf",
+          "evidence_type": "explicit limitation",
+          "evidence": "While machine learning approaches offer promising solutions for risk prediction, their clinical application often lacks interpretability.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "3f0ec5aacbe55fa4535a522b747e5211447f8ffc",
+          "evidence_type": "explicit limitation",
+          "evidence": "The origin of explainable AI (xAI) is coined from these challenges and recently gained more attention by the researchers by adding explainability comprehensively in traditional AI systems.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "7fe0c1515d951bbe77e5c12eb436f5a91fc5931f",
+          "evidence_type": "explicit limitation",
+          "evidence": "However, their internal mechanisms sometimes resemble opaque entities, leading to challenges in understanding and placing trust in their decision-making processes.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "c9526eabe882263c8e54db79b384aa3b74ac3045",
+          "evidence_type": "explicit limitation",
+          "evidence": "This challenge is compounded by regulatory requirements, including GDPR mandates for explainability and medical device regulations emphasizing AI transparency.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "df9b9ba53bf8e2eb651f614510b80d986002bf8d",
+          "evidence_type": "explicit limitation",
+          "evidence": "The generic and prominent key challenges in terms of trade-offs between accuracy and interpretability, the existing scalability issues, and ethical considerations were focused.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "fb4b16bb22b8898c118412f32fad5601741fb05e",
+          "evidence_type": "explicit future work",
+          "evidence": "To increase real-world impact, future work should explore comparative evaluations of XAI techniques, domain-specific explanation frameworks, and user-centered approaches that align with the needs of coaches, athletes, and analysts.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "d49abcd4c3cf05df5aae535bb90e8e805c00aff2",
+          "evidence_type": "explicit limitation",
+          "evidence": "Explainable Artificial Intelligence (XAI) addresses these challenges by providing explanations for how these models make decisions and predictions, ensuring transparency, accountability, and fairness.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "bec1eac7ade48f5a9e40d05ce95a54e272eecfb0",
+          "evidence_type": "explicit limitation",
+          "evidence": "Yet, significant challenges, such as the complexity and opacity of many AI models (particularly deep learning), transparency, bias, data sharing, and equitable deployment, must be surpassed to achieve clinical trust, ethical use, and regulatory approval of AI algorithms in healthcare.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "556991c703ebe96424f8698497bd6a6e7b2fde1d",
+          "evidence_type": "explicit limitation",
+          "evidence": "However, achieving a balance between complex, high-performing AI models and the need for interpretability presents significant challenges.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "959e56c8323c2d1b27c9b5bb87062398264cd36f",
+          "evidence_type": "explicit limitation",
+          "evidence": "This challenge has led to the development of explainable artificial intelligence (XAI), which aims to enhance user understanding and trust by providing clear explanations of AI decisions and processes.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "59e6f76680499eb87e53c37daed00f4baa166c28",
+          "evidence_type": "explicit limitation",
+          "evidence": "However, the integration of non-explainable AI (NXAI) - which operates without fully transparent, interpretable mechanisms - presents ethical challenges related to accountability, autonomy, and trust.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "ac445ef80fc8f5a219d32706bc79d5f634d67d92",
+          "evidence_type": "explicit limitation",
+          "evidence": "Our findings highlight a growing interest in XAI, particularly in medical imaging, yet reveal persistent challenges in clinical adoption, including issues of trust, interpretability, and integration into decision-making workflows.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "05aae448e22849d56418fefb06ca810836e27a69",
+          "evidence_type": "explicit limitation",
+          "evidence": "The proposed AI-based diagnostic framework thus demonstrates high accuracy, interpretability, and generalization, representing a scalable solution for malaria detection in resource-limited healthcare settings.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "eac396535483234223fc3e71dd3e53168ed9b5bd",
+          "evidence_type": "explicit limitation",
+          "evidence": "Machine learning has shown promise in predicting lung cancer risk, but the lack of transparency and interpretability in black-box models impedes the understanding of factors that contribute to risk.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "f28a73962f196ec175816e778e8dd946fdcf13a6",
+          "evidence_type": "explicit limitation",
+          "evidence": "Despite the promise of Explainable Artificial Intelligence (XAI) in promoting transparency, challenges persist, including standardization of interpretability metrics and some users may have difficulty associating their rationales to transparent forms.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "10b694d0ba5bd4537de36f4d113f68627b8b2691",
+          "evidence_type": "explicit limitation",
+          "evidence": "The lack of transparency in the AI models may hinder the confidence and trust of the doctors and the patients, as well as their perception of the AI and its abilities.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "d499aef63ad41295dd9f164d880f617610da1c1c",
+          "evidence_type": "explicit limitation",
+          "evidence": "It addresses the challenge of understanding complex machine learning and deep learning models, ensuring transparency, interpretability, and accountability.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "cd537c93acca44e3962c5246d1b15cb5ea132f9a",
+          "evidence_type": "explicit limitation",
+          "evidence": "Although these models have achieved significant results, their lack of explainability has limited widespread adoption in clinical practice.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "c483beec0afae8d08f011182460095049025b8d1",
+          "evidence_type": "explicit limitation",
+          "evidence": "However, the black-box nature of deep neural networks challenges its use in mission critical applications, raising ethical and judicial concerns inducing lack of trust.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "c483beec0afae8d08f011182460095049025b8d1",
+          "evidence_type": "explicit limitation",
+          "evidence": "After explaining each category of algorithms and approaches in detail, we then evaluate the explanation maps generated by eight XAI algorithms on image data, discuss the limitations of this approach, and provide potential future directions to improve XAI evaluation.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2206.04800",
+          "evidence_type": "explicit limitation",
+          "evidence": "Recently, several number of XAI models have been to address the issues surrounding by lack of interpretability and explainability of black-box models in various application areas such as healthcare, military, energy, financial and industrial domains.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2308.09380",
+          "evidence_type": "explicit limitation",
+          "evidence": "Existing artificial intelligence (AI) models for diagnosing knee osteoarthritis (OA) have faced criticism for their lack of transparency and interpretability, despite achieving medical-expert-like performance.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2312.11507",
+          "evidence_type": "explicit limitation",
+          "evidence": "Moreover, because of the black-box nature of these models, it is frequently difficult for the end user to comprehend the models' outcomes and underlying processes to trust and use the model outcome to make a decision.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2111.00601",
+          "evidence_type": "explicit limitation",
+          "evidence": "Finally, it has presented some commercial XAI platforms that offer explainability over traditional AI technologies before presenting future challenges and opportunities.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2410.00366",
+          "evidence_type": "explicit limitation",
+          "evidence": "However, security, explainability, robustness, and performance optimization challenges remain critical barriers to widespread adoption in clinical environments.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2011.03195",
+          "evidence_type": "explicit limitation",
+          "evidence": "With the increasingly indispensable role of AI in healthcare, there are growing concerns over the lack of transparency and explainability in addition to potential bias encountered by predictions of the model.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2306.02312",
+          "evidence_type": "explicit limitation",
+          "evidence": "Ante-hoc interpretability has become the holy grail of explainable artificial intelligence for high-stakes domains such as healthcare; however, this notion is elusive, lacks a widely-accepted definition and depends on the operational context.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "1911.10104",
+          "evidence_type": "explicit limitation",
+          "evidence": "In fact, the quantification of explainability is an open challenge.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2102.01998",
+          "evidence_type": "explicit limitation",
+          "evidence": "Consequently, our confidence in AI systems can be hindered by the lack of explainability in these black-box models.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2102.01998",
+          "evidence_type": "explicit limitation",
+          "evidence": "The insufficient explainability and transparency in most existing AI systems can be one of the major reasons that successful implementation and integration of AI tools into routine clinical practice are uncommon.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "1905.11474",
+          "evidence_type": "explicit limitation",
+          "evidence": "Although \"black box\" models such as Artificial Neural Networks, Support Vector Machines, and Ensemble Approaches continue to show superior performance in many disciplines, their adoption in the sensitive disciplines (e.g., finance, healthcare) is questionable due to the lack of interpretability and explainability of the model.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "1905.11474",
+          "evidence_type": "explicit limitation",
+          "evidence": "In fact, future adoption of \"black box\" models is difficult because of the recent rule of \"right of explanation\" by the European Union where a user can ask for an explanation behind an algorithmic decision, and the newly proposed bill by the US government, the \"Algorithmic Accountability Act\", which would require companies to assess their machine learning systems for bias and discrimination and take corrective measures.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2504.19027",
+          "evidence_type": "explicit limitation",
+          "evidence": "To address these challenges, we introduce DiCE-Extended, an enhanced CF explanation framework that integrates multi-objective optimization techniques to improve robustness while maintaining interpretability.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2604.09799",
+          "evidence_type": "explicit limitation",
+          "evidence": "The review examines how these methods address the temporal, multimodal, and semantic complexities of HAR, and summarize their interpretability objectives, explanation targets, and limitations.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2109.15125",
+          "evidence_type": "explicit limitation",
+          "evidence": "Maintaining trust presents an XAI challenge because the recommendations are not easily interpretable.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2510.19514",
+          "evidence_type": "explicit limitation",
+          "evidence": "Addressing the challenges of explainability of state-of-the-art models, we propose a prototype-driven framework for generating sparse counterfactual explanations tailored to 12-lead ECG classification models.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2412.00800",
+          "evidence_type": "explicit limitation",
+          "evidence": "It explores interpretability in traditional models such as Decision Trees, Linear Regression, and Support Vector Machines, alongside the challenges of explaining deep learning architectures like CNNs, RNNs, and Large Language Models (LLMs), including BERT, GPT, and T5.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2404.03892",
+          "evidence_type": "explicit limitation",
+          "evidence": "The Deep learning (DL) models for diagnosing breast cancer from mammographic images often operate as \"black boxes\", making it difficult for healthcare professionals to trust and understand their decision-making processes.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2511.00246",
+          "evidence_type": "explicit limitation",
+          "evidence": "Because of the black box operation's shortcomings in DL models' decisions, there is a lack of reliability and trust in the outcomes.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2404.13419",
+          "evidence_type": "explicit limitation",
+          "evidence": "Despite the progress made in developing explanation generation techniques for individual machine learning (ML) models, significant challenges remain in achieving coherent and comprehensive explanations in multi-model systems.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2404.13419",
+          "evidence_type": "explicit limitation",
+          "evidence": "This paper addresses these challenges by focusing on the explanation reconciliation problem (ERP) within multi-model systems.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2212.13261",
+          "evidence_type": "explicit limitation",
+          "evidence": "This lack of transparency can be a challenge for both end-users and decision-makers, as well as AI developers.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2506.07228",
+          "evidence_type": "explicit limitation",
+          "evidence": "The integration of XAI enhanced the system's transparency and stability, rendering it more appropriate for clinical application in resource-limited environments such as Bangladesh.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2306.11985",
+          "evidence_type": "explicit limitation",
+          "evidence": "Although various methods of explainable artificial intelligence (XAI) have been suggested, there is a lack of literature that delves into their practicality and assesses them based on criteria that could foster trust in clinical environments.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2503.06463",
+          "evidence_type": "explicit limitation",
+          "evidence": "By providing deeper interpretability of the XAI outputs using Large Language Models (LLMs), we provide users with more personalized and accessible insights to overcome the challenges posed by AI's \"black box\" nature.",
+          "is_direct_quote": true
+        }
+      ],
+      "evidence_count": 63,
+      "evidence_sources": [
+        "abstract"
+      ],
+      "rationale": "This candidate is an evidence-supported hypothesis based on 54 independent paper(s) and 63 explicit limitation/future-work passage(s).",
+      "caveat": "This is potential research-gap identification, not a proven or confirmed gap. The evidence is abstract-level and requires further investigation and domain review.",
+      "cluster_context": {
+        "not_used_as_primary_evidence": true,
+        "statement": "Cluster membership is contextual only and does not establish this candidate gap."
+      }
+    },
+    {
+      "gap_id": "GAP-03",
+      "gap_statement": "Potential gap hypothesis: robustness, fairness, subgroup behavior, and uncertainty of healthcare XAI systems remain insufficiently evaluated across the reviewed studies.",
+      "gap_type": "robustness, fairness, and uncertainty",
+      "confidence": "HIGH",
+      "supporting_paper_ids": [
+        "d49abcd4c3cf05df5aae535bb90e8e805c00aff2",
+        "bec1eac7ade48f5a9e40d05ce95a54e272eecfb0",
+        "556991c703ebe96424f8698497bd6a6e7b2fde1d",
+        "33158e438cc21757869cdb447bcd03af7b79f7e9",
+        "d499aef63ad41295dd9f164d880f617610da1c1c",
+        "2412.01829",
+        "2410.00366",
+        "2011.03195",
+        "2401.17511",
+        "2508.09639",
+        "1905.11474",
+        "2504.19027",
+        "2511.00246",
+        "2606.05710"
+      ],
+      "supporting_titles": [
+        "Explainable artificial intelligence: A survey of needs, techniques, applications, and future direction",
+        "Unveiling the Algorithm: The Role of Explainable Artificial Intelligence in Modern Surgery",
+        "Explainable Artificial Intelligence (Al) through human-AI collaborative frameworks: Quantifying trust and interpretability in high-stakes decisions",
+        "The application of explainable artificial intelligence (XAI) in electronic health record research: A scoping review",
+        "Enhancing Interpretability, Reliability and Trustworthiness: Applications of Explainable Artificial Intelligence in Medical Imaging, Financial Markets, and Sentiment Analysis",
+        "Explainable Artificial Intelligence for Medical Applications: A Review",
+        "Easydiagnos: a framework for accurate feature selection for automatic diagnosis in smart healthcare",
+        "Explainable AI meets Healthcare: A Study on Heart Disease Dataset",
+        "Linguistically Communicating Uncertainty in Patient-Facing Risk Prediction Models",
+        "UbiQTree: Uncertainty Quantification in XAI with Tree Ensembles",
+        "Infusing domain knowledge in AI-based \"black box\" models for better explainability with application in bankruptcy prediction",
+        "DiCE-Extended: A Robust Approach to Counterfactual Explanations in Machine Learning",
+        "Melanoma Classification Through Deep Ensemble Learning and Explainable AI",
+        "Explainable AI-Driven Cyber Risk Analytics and Model Reliability Assessment for Intelligent Governance of U.S. Critical Infrastructure: An XGBoost and SHAP-Based Intrusion Detection Framework"
+      ],
+      "supporting_evidence": [
+        {
+          "paper_id": "d49abcd4c3cf05df5aae535bb90e8e805c00aff2",
+          "evidence_type": "explicit limitation",
+          "evidence": "Explainable Artificial Intelligence (XAI) addresses these challenges by providing explanations for how these models make decisions and predictions, ensuring transparency, accountability, and fairness.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "bec1eac7ade48f5a9e40d05ce95a54e272eecfb0",
+          "evidence_type": "explicit limitation",
+          "evidence": "Yet, significant challenges, such as the complexity and opacity of many AI models (particularly deep learning), transparency, bias, data sharing, and equitable deployment, must be surpassed to achieve clinical trust, ethical use, and regulatory approval of AI algorithms in healthcare.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "bec1eac7ade48f5a9e40d05ce95a54e272eecfb0",
+          "evidence_type": "explicit limitation",
+          "evidence": "Model bias, overfitting, and user interface design are key challenges that need to be overcome and will be explored in this review to achieve the integration of XAI into the surgical field.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "556991c703ebe96424f8698497bd6a6e7b2fde1d",
+          "evidence_type": "explicit limitation",
+          "evidence": "This explores how human-AI collaborative frameworks can address these challenges, enhancing the effectiveness, fairness, and trustworthiness of AI systems in high-stakes decision-making environments.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "33158e438cc21757869cdb447bcd03af7b79f7e9",
+          "evidence_type": "explicit limitation",
+          "evidence": "This review identifies the increasing use of XAI in tabular EHR research and highlights a deficiency in the reporting of methods and a lack of critical appraisal of validity and robustness.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "d499aef63ad41295dd9f164d880f617610da1c1c",
+          "evidence_type": "explicit limitation",
+          "evidence": "Challenges such as scalability issues and ethical considerations, including biases and fairness, are discussed.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2412.01829",
+          "evidence_type": "explicit limitation",
+          "evidence": "While these well-established applications have significantly assisted in medical field diagnoses, clinical decision-making, and management, collaboration between the medical and AI sectors faces an urgent challenge: How to substantiate the reliability of decision-making?",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2410.00366",
+          "evidence_type": "explicit limitation",
+          "evidence": "However, security, explainability, robustness, and performance optimization challenges remain critical barriers to widespread adoption in clinical environments.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2011.03195",
+          "evidence_type": "explicit limitation",
+          "evidence": "With the increasingly indispensable role of AI in healthcare, there are growing concerns over the lack of transparency and explainability in addition to potential bias encountered by predictions of the model.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2401.17511",
+          "evidence_type": "explicit limitation",
+          "evidence": "This paper addresses the unique challenges associated with uncertainty quantification in AI models when applied to patient-facing contexts within healthcare.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2508.09639",
+          "evidence_type": "explicit limitation",
+          "evidence": "The epistemic uncertainty, which arises from a lack of data.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "1905.11474",
+          "evidence_type": "explicit limitation",
+          "evidence": "In fact, future adoption of \"black box\" models is difficult because of the recent rule of \"right of explanation\" by the European Union where a user can ask for an explanation behind an algorithmic decision, and the newly proposed bill by the US government, the \"Algorithmic Accountability Act\", which would require companies to assess their machine learning systems for bias and discrimination and take corrective measures.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2504.19027",
+          "evidence_type": "explicit limitation",
+          "evidence": "A widely adopted framework, Diverse Counterfactual Explanations (DiCE), emphasizes diversity but lacks robustness, making CF explanations sensitive to perturbations and domain constraints.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2504.19027",
+          "evidence_type": "explicit limitation",
+          "evidence": "To address these challenges, we introduce DiCE-Extended, an enhanced CF explanation framework that integrates multi-objective optimization techniques to improve robustness while maintaining interpretability.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2511.00246",
+          "evidence_type": "explicit limitation",
+          "evidence": "Because of the black box operation's shortcomings in DL models' decisions, there is a lack of reliability and trust in the outcomes.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2606.05710",
+          "evidence_type": "explicit limitation",
+          "evidence": "The growing cyber threat environment, such as Distributed Denial of Service (DDos) attacks, botnets, ransomware, and Advanced Persistent Threats (APTs) pose significant challenges to infrastructure resilience, cyber security reliability, and governance trustworthiness.",
+          "is_direct_quote": true
+        }
+      ],
+      "evidence_count": 16,
+      "evidence_sources": [
+        "abstract"
+      ],
+      "rationale": "This candidate is an evidence-supported hypothesis based on 14 independent paper(s) and 16 explicit limitation/future-work passage(s).",
+      "caveat": "This is potential research-gap identification, not a proven or confirmed gap. The evidence is abstract-level and requires further investigation and domain review.",
+      "cluster_context": {
+        "not_used_as_primary_evidence": true,
+        "statement": "Cluster membership is contextual only and does not establish this candidate gap."
+      }
+    },
+    {
+      "gap_id": "GAP-04",
+      "gap_statement": "Potential gap hypothesis: reproducible and comparative evaluation of healthcare XAI methods remains insufficiently developed across the reviewed studies.",
+      "gap_type": "evaluation and reproducibility",
+      "confidence": "HIGH",
+      "supporting_paper_ids": [
+        "cf7bd780cc164e913ca9a40753fdb7169bbf826a",
+        "fb4b16bb22b8898c118412f32fad5601741fb05e",
+        "11112229889edb04633731b4f218a8d56e2a15ee",
+        "346f01d78a4ce4a47781eb49ae044668d7b50fa7",
+        "33158e438cc21757869cdb447bcd03af7b79f7e9",
+        "c483beec0afae8d08f011182460095049025b8d1",
+        "2307.05104",
+        "2604.09799",
+        "2510.19514"
+      ],
+      "supporting_titles": [
+        "A Review of Explainable Artificial Intelligence from the Perspectives of Challenges and Opportunities",
+        "A scoping review of explainable artificial intelligence in sports science",
+        "Evaluating Explainable Artificial Intelligence (XAI) techniques in chest radiology imaging through a human-centered Lens",
+        "Explainable Artificial Intelligence: A Comprehensive Review of Techniques, Applications, and Emerging Trends",
+        "The application of explainable artificial intelligence (XAI) in electronic health record research: A scoping review",
+        "Opportunities and Challenges in Explainable Artificial Intelligence (XAI): A Survey",
+        "A Deep Dive into Perturbations as Evaluation Technique for Time Series XAI",
+        "Explainable Human Activity Recognition: A Unified Review of Concepts and Mechanisms",
+        "From Prototypes to Sparse ECG Explanations: SHAP-Driven Counterfactuals for Multivariate Time-Series Multi-class Classification"
+      ],
+      "supporting_evidence": [
+        {
+          "paper_id": "cf7bd780cc164e913ca9a40753fdb7169bbf826a",
+          "evidence_type": "explicit limitation",
+          "evidence": "Special attention is given to various challenges of XAI, such as no universal definition, trade-off between accuracy and interpretability, and lack of standardized evaluation metrics.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "cf7bd780cc164e913ca9a40753fdb7169bbf826a",
+          "evidence_type": "explicit future work",
+          "evidence": "We conclude by outlining the future research directions of human-centric design, interactive explanation, and standardized evaluation frameworks.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "fb4b16bb22b8898c118412f32fad5601741fb05e",
+          "evidence_type": "explicit limitation",
+          "evidence": "The findings highlight a lack of methodological diversity and limited validation of explanations with domain experts or practitioners.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "11112229889edb04633731b4f218a8d56e2a15ee",
+          "evidence_type": "explicit limitation",
+          "evidence": "However, XAI systems face challenges in gaining acceptance within the healthcare sector, mainly due to technical hurdles in utilizing these systems in practice and the lack of human-centered evaluation/validation.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "346f01d78a4ce4a47781eb49ae044668d7b50fa7",
+          "evidence_type": "explicit limitation",
+          "evidence": "Persistent challenges, including inconsistent terminology, subjective evaluation, and adversarial vulnerabilities, are examined.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "33158e438cc21757869cdb447bcd03af7b79f7e9",
+          "evidence_type": "explicit limitation",
+          "evidence": "To address this, Explainable Artificial Intelligence (XAI) methods are proposed, but a comprehensive evaluation of their effectiveness is currently limited.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "c483beec0afae8d08f011182460095049025b8d1",
+          "evidence_type": "explicit limitation",
+          "evidence": "After explaining each category of algorithms and approaches in detail, we then evaluate the explanation maps generated by eight XAI algorithms on image data, discuss the limitations of this approach, and provide potential future directions to improve XAI evaluation.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2307.05104",
+          "evidence_type": "explicit limitation",
+          "evidence": "Our results demonstrate that the perturbation analysis approach can effectively evaluate the quality of attributions and provide insights into the strengths and limitations of XAI techniques.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2604.09799",
+          "evidence_type": "explicit limitation",
+          "evidence": "In addition, we discuss current evaluation practices, highlight key challenges in achieving reliable and deployable XAI-HAR, and outline directions toward trustworthy activity recognition systems that better support human understanding and decision-making.",
+          "is_direct_quote": true
+        },
+        {
+          "paper_id": "2510.19514",
+          "evidence_type": "explicit limitation",
+          "evidence": "We evaluate three variants of our approach, Original, Sparse, and Aligned Sparse, with class-specific performance ranging from 98.9% validity for myocardial infarction (MI) to challenges with hypertrophy (HYP) detection (13.2%).",
+          "is_direct_quote": true
+        }
+      ],
+      "evidence_count": 10,
+      "evidence_sources": [
+        "abstract"
+      ],
+      "rationale": "This candidate is an evidence-supported hypothesis based on 9 independent paper(s) and 10 explicit limitation/future-work passage(s).",
+      "caveat": "This is potential research-gap identification, not a proven or confirmed gap. The evidence is abstract-level and requires further investigation and domain review.",
+      "cluster_context": {
+        "not_used_as_primary_evidence": true,
+        "statement": "Cluster membership is contextual only and does not establish this candidate gap."
+      }
+    }
+  ],
+  "limitations": [
+    "Evidence extraction is keyword-guided and limited to title/abstract corpus text.",
+    "A candidate gap is a hypothesis requiring further investigation, not a proven or confirmed gap.",
+    "Cluster size, citation count, and clustering stability are not treated as proof of a research gap.",
+    "No external literature, LLM judgment, or expert validation was used."
+  ]
+}

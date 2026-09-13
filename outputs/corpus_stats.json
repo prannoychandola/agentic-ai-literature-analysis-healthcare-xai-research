@@ -1,0 +1,127 @@
+{
+  "retrieval_started_at": "2026-09-06T08:47:49.651964+00:00",
+  "retrieval_finished_at": "2026-09-06T08:48:15.227796+00:00",
+  "semantic_scholar_retrieved": 100,
+  "arxiv_retrieved": 100,
+  "raw_combined": 200,
+  "relevance_qualified": 187,
+  "rejected": 4,
+  "duplicates_removed": 9,
+  "final_unique_corpus": 187,
+  "papers_with_abstracts": 175,
+  "papers_with_doi": 114,
+  "papers_with_citation_counts": 97,
+  "source_distribution": {
+    "semantic_scholar": 97,
+    "arxiv": 90
+  },
+  "api_failure_status": {
+    "semantic_scholar": {
+      "status": "completed",
+      "target": 100,
+      "retrieved": 100,
+      "queries": [
+        "explainable artificial intelligence healthcare",
+        "explainable AI healthcare",
+        "XAI healthcare",
+        "interpretable machine learning healthcare"
+      ],
+      "pages": 1,
+      "last_request": {
+        "limit": 100,
+        "fields": "paperId,title,abstract,authors,year,venue,externalIds,url,citationCount,publicationDate"
+      }
+    },
+    "arxiv": {
+      "status": "completed",
+      "target": 100,
+      "retrieved": 100,
+      "queries": [
+        "all:\"explainable artificial intelligence\" AND all:healthcare",
+        "all:\"explainable AI\" AND all:healthcare",
+        "all:XAI AND all:healthcare",
+        "all:\"interpretable machine learning\" AND all:healthcare"
+      ],
+      "pages": 2
+    }
+  },
+  "retrieval_queries": {
+    "semantic_scholar": [
+      "explainable artificial intelligence healthcare",
+      "explainable AI healthcare",
+      "XAI healthcare",
+      "interpretable machine learning healthcare"
+    ],
+    "arxiv": [
+      "all:\"explainable artificial intelligence\" AND all:healthcare",
+      "all:\"explainable AI\" AND all:healthcare",
+      "all:XAI AND all:healthcare",
+      "all:\"interpretable machine learning\" AND all:healthcare"
+    ]
+  },
+  "retrieval_configuration": {
+    "target_per_source": 100,
+    "semantic_scholar_page_size": 100,
+    "semantic_scholar_fallback_page_size": 50,
+    "semantic_scholar_fields": [
+      "paperId",
+      "title",
+      "abstract",
+      "authors",
+      "year",
+      "venue",
+      "externalIds",
+      "url",
+      "citationCount",
+      "publicationDate"
+    ],
+    "semantic_scholar_fallback_fields": [
+      "paperId",
+      "title",
+      "abstract",
+      "year",
+      "externalIds",
+      "citationCount"
+    ],
+    "arxiv_page_size": 50,
+    "arxiv_minimum_request_interval_seconds": 3.0,
+    "screening_terms": {
+      "xai": [
+        "explainable artificial intelligence",
+        "explainable ai",
+        "explainability",
+        "interpretable machine learning",
+        "interpretable ai",
+        "interpretability",
+        "xai",
+        "explainable machine learning",
+        "model interpretability"
+      ],
+      "healthcare": [
+        "healthcare",
+        "health care",
+        "clinical",
+        "clinician",
+        "medical",
+        "medicine",
+        "hospital",
+        "patient",
+        "diagnosis",
+        "diagnostic",
+        "radiology",
+        "pathology",
+        "electronic health record",
+        "ehr",
+        "disease",
+        "health",
+        "biomedical"
+      ]
+    },
+    "deduplication_strategy": [
+      "doi",
+      "source paper ID",
+      "normalized title"
+    ],
+    "deduplication_is_fuzzy": false
+  }
+}

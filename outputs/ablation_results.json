@@ -1,0 +1,402 @@
+{
+  "timestamp": "2026-09-06T09:07:29.335306+00:00",
+  "corpus_size": 187,
+  "embedded_paper_count": 175,
+  "paper_ids_order_used": [
+    "03a9540aa71ee8921d7656e0a78eb08a64f68a94",
+    "6cc7bcd5f0a3fc408c5f4fa97fe638ef03dd7fab",
+    "3b54c7037005fbb4e827e8787a024dd18e0dd619",
+    "747ce5b1d0178cb08dcf48e43f738f1476876ed5",
+    "a7cba054110883abe703bb759e869e297e90c7f4",
+    "e78cb101db209a389485792a06c3ec4e86ccc1c8",
+    "f975e61108df93736dc63e50b4a132b7023b0ccd",
+    "20c02c51420a69ae39b74d8d73148417819dacc1",
+    "1d5831e7b535d4a26efcc730c92bf6e964d602ba",
+    "946485ed9eba9af9528ef9bbc5ccac97346f12f0",
+    "068186a0da96ce2c1437a971d08817dd54980116",
+    "a1b5e4b4a430058e33498e4d842734344d1fb7f9",
+    "11208cbc06ce190e0821cef5182584b17cc19f15",
+    "1fa9eac98094fce735727c4ff0391448a4038b97",
+    "4d97eefb9efbc39f91922337a90403eb88c2ace7",
+    "47ead100d2f049e0b32fd1a449e23d10176a8c38",
+    "2a0f189edcf522d8568f8fbe32373a17cb77cb57",
+    "856df8680f47da9b267b896fcdfdf0fb010f73e4",
+    "682d9147abcd9a7b1bd536dcdbf2319a75529c54",
+    "b89fc2186636ef33f09a1a34315227286a70197b",
+    "bb9959d715b8933b2036b94513122f1f9cbbe355",
+    "a4b0744a93fee40f1e16904af16e06294eff0dcd",
+    "0024c33a8cca7175b92880b8c47940deeb05e87c",
+    "c3f6a0e8e2468f1baa1aafc689d6acc0a710f82e",
+    "421cebc60f864bdfa680bd1021b22c608b480650",
+    "44c82b19180e786c3993d9bcfd933aa4f14455d3",
+    "8137fbbaf69d80dacb87ca05ab516b04bb03db02",
+    "cf7bd780cc164e913ca9a40753fdb7169bbf826a",
+    "dc49d359f6077e831c3d4ee853979cdf9cb960b1",
+    "449440154af5b6cadc5fc28c3b76dcb32b193010",
+    "684b28b91706535fc89a17f02d69945a01200315",
+    "e42c6be8fc7e128956273bd7d8ce32dc14c536ef",
+    "52053dc5883fdc2259b210277fd2f0cfb8363cbf",
+    "6239b56d3d45936b4bd5fa4363f43783ccf71e01",
+    "3f0ec5aacbe55fa4535a522b747e5211447f8ffc",
+    "7fe0c1515d951bbe77e5c12eb436f5a91fc5931f",
+    "700b8298d20cd34305d76e12bc94948fd4522b53",
+    "ffe1458418ba93a2ea08ebabd52b21c8dba31549",
+    "c9526eabe882263c8e54db79b384aa3b74ac3045",
+    "df9b9ba53bf8e2eb651f614510b80d986002bf8d",
+    "839957c7c3911d462f7698a6e5a9ca0d5718e100",
+    "fb4b16bb22b8898c118412f32fad5601741fb05e",
+    "d49abcd4c3cf05df5aae535bb90e8e805c00aff2",
+    "19de417754f10ccdfe45c113c75044afe21fa992",
+    "bec1eac7ade48f5a9e40d05ce95a54e272eecfb0",
+    "f28f5b4c67b18be74aa3b48659031eb1e31443fa",
+    "1c9f96e44e7138049b53ff9cfe593b7f95f44f53",
+    "5ad794b62328294f7a86890a1fd4f4c53e7d3037",
+    "11112229889edb04633731b4f218a8d56e2a15ee",
+    "556991c703ebe96424f8698497bd6a6e7b2fde1d",
+    "959e56c8323c2d1b27c9b5bb87062398264cd36f",
+    "1e31e2132c1bb8aea8ecb4f2fb735a8901c5b943",
+    "59e6f76680499eb87e53c37daed00f4baa166c28",
+    "7a09e21059f00d8f5e4b7b2228bf1700c188a263",
+    "346f01d78a4ce4a47781eb49ae044668d7b50fa7",
+    "ac445ef80fc8f5a219d32706bc79d5f634d67d92",
+    "5e9ebbba8c5b6101b5aa24456aa492f9f70f348b",
+    "05aae448e22849d56418fefb06ca810836e27a69",
+    "a84c5c27b776ca636f2c5ed120e8fcf7669224b0",
+    "33158e438cc21757869cdb447bcd03af7b79f7e9",
+    "c336299b31ff2c667d6025afd09e0ece6544ddc8",
+    "1943a5ed302536d88b93c8a7a593bd60775bb6bf",
+    "f3f2a38d41b098f93f7fc6a25067f1b44ebe4a59",
+    "eac396535483234223fc3e71dd3e53168ed9b5bd",
+    "044a0ddac6aaeaa518e79a1bbab929a97a6c9994",
+    "8c28559672361149bf314804e22ed953bfebb6b8",
+    "f28a73962f196ec175816e778e8dd946fdcf13a6",
+    "10b694d0ba5bd4537de36f4d113f68627b8b2691",
+    "fe70262ce7e8d2f8c753315fee8fefadcacbf569",
+    "20f2277a87abb669f55fe3fa67b0d61e036c5552",
+    "691df1ede73cff8aaab5228368ea1e24807d788c",
+    "106bcd930e4606f983507a0bed24ab8c909a572f",
+    "d31df8b4069678e2f32790670e2f4702f596f347",
+    "74f0f374003e296536a2c6ed5f50e1e2db13d44c",
+    "4785f055980c9b7188b481133eeb2348dca39853",
+    "d499aef63ad41295dd9f164d880f617610da1c1c",
+    "01ece2b963a6d334dfb0ba50ad096567ca1766c1",
+    "77d942cfa2d4b9266080258943048825e7449ad2",
+    "cd537c93acca44e3962c5246d1b15cb5ea132f9a",
+    "2b3116944b0d6fbc0e48a9f458d043d16b3556fe",
+    "c483beec0afae8d08f011182460095049025b8d1",
+    "9cf5bf7847155c32c075449fdccfd7f2afe17219",
+    "5c9566d46ccb1ab640df3df4406ee4c05230337e",
+    "8bb95452cdc553246bddb89861b2442fc3cd775d",
+    "734bd61cc2736a8ce0daa45e7d6c868cbdb59fa1",
+    "2604.16340",
+    "2410.18725",
+    "2102.01116",
+    "2206.04800",
+    "2308.09380",
+    "2307.00364",
+    "2605.02903",
+    "2412.01829",
+    "2212.07058",
+    "2502.14116",
+    "2006.13427",
+    "2402.07915",
+    "2312.11507",
+    "2111.00601",
+    "2208.14937",
+    "2407.17165",
+    "2410.00366",
+    "2011.03195",
+    "2506.13904",
+    "2105.12497",
+    "2508.05753",
+    "2404.12832",
+    "2306.02312",
+    "2606.26202",
+    "1911.10104",
+    "2504.08552",
+    "2401.17511",
+    "2306.01750",
+    "2502.07347",
+    "2604.09578",
+    "2502.17999",
+    "2302.10671",
+    "2412.17527",
+    "2309.09917",
+    "2312.10696",
+    "2102.01998",
+    "2308.16113",
+    "2208.08739",
+    "2401.17477",
+    "2106.10191",
+    "2307.05104",
+    "2309.00252",
+    "2509.16685",
+    "2408.05239",
+    "2603.15373",
+    "2508.09639",
+    "1905.11474",
+    "2504.19027",
+    "2302.06609",
+    "2303.06640",
+    "2403.09410",
+    "2603.06485",
+    "2604.09799",
+    "2512.07178",
+    "2305.05525",
+    "2406.13584",
+    "2403.04130",
+    "2109.15125",
+    "2608.27821",
+    "2403.15684",
+    "2502.02618",
+    "2401.15840",
+    "2408.00753",
+    "2510.19514",
+    "2501.06077",
+    "2608.07091",
+    "2411.14471",
+    "2403.09752",
+    "2412.00800",
+    "2205.04599",
+    "2404.03892",
+    "2501.16357",
+    "2511.00246",
+    "2504.04549",
+    "2308.11446",
+    "2310.01828",
+    "2404.13419",
+    "2505.08198",
+    "2011.04049",
+    "2311.14139",
+    "2307.07603",
+    "2606.05710",
+    "2212.13261",
+    "2511.08361",
+    "2506.07228",
+    "2408.12420",
+    "2012.00093",
+    "2501.12706",
+    "2306.11985",
+    "2503.06463"
+  ],
+  "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_dimensions": {
+    "Title only": 384,
+    "Abstract only": 384,
+    "Title + Abstract": 384
+  },
+  "normalization_method": "L2 normalization per embedding vector",
+  "conditions": {
+    "Title only": "title field only",
+    "Abstract only": "abstract field only",
+    "Title + Abstract": "title field followed by '. ' and abstract field; title omitted from the separator when empty"
+  },
+  "k_values": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "kmeans_configuration": {
+    "random_state": 42,
+    "n_init": 20
+  },
+  "metrics": {
+    "Title only": [
+      {
+        "k": 2,
+        "silhouette_score": 0.07902462780475616,
+        "calinski_harabasz_score": 12.63985103073003,
+        "davies_bouldin_score": 3.5738724240159603,
+        "inertia": 97.7639389038086
+      },
+      {
+        "k": 3,
+        "silhouette_score": 0.0568496435880661,
+        "calinski_harabasz_score": 10.72260086546087,
+        "davies_bouldin_score": 3.180783611298921,
+        "inertia": 93.27693176269531
+      },
+      {
+        "k": 4,
+        "silhouette_score": 0.03716608136892319,
+        "calinski_harabasz_score": 9.32377855153473,
+        "davies_bouldin_score": 3.3920738386165494,
+        "inertia": 90.1590576171875
+      },
+      {
+        "k": 5,
+        "silhouette_score": 0.03038713149726391,
+        "calinski_harabasz_score": 8.242607486799924,
+        "davies_bouldin_score": 3.4049080689314053,
+        "inertia": 87.8658218383789
+      },
+      {
+        "k": 6,
+        "silhouette_score": 0.0526924692094326,
+        "calinski_harabasz_score": 7.625021430296392,
+        "davies_bouldin_score": 3.085116436564054,
+        "inertia": 85.59684753417969
+      },
+      {
+        "k": 7,
+        "silhouette_score": 0.045675769448280334,
+        "calinski_harabasz_score": 6.874270783639441,
+        "davies_bouldin_score": 3.1370304282864927,
+        "inertia": 84.22803497314453
+      },
+      {
+        "k": 8,
+        "silhouette_score": 0.0516655407845974,
+        "calinski_harabasz_score": 6.437828229230295,
+        "davies_bouldin_score": 2.955121771170422,
+        "inertia": 82.6136245727539
+      }
+    ],
+    "Abstract only": [
+      {
+        "k": 2,
+        "silhouette_score": 0.061625465750694275,
+        "calinski_harabasz_score": 11.408502533873826,
+        "davies_bouldin_score": 3.74494649346996,
+        "inertia": 80.7723388671875
+      },
+      {
+        "k": 3,
+        "silhouette_score": 0.05578862503170967,
+        "calinski_harabasz_score": 9.672836173750497,
+        "davies_bouldin_score": 3.3589023856518954,
+        "inertia": 77.39399719238281
+      },
+      {
+        "k": 4,
+        "silhouette_score": 0.043707288801670074,
+        "calinski_harabasz_score": 8.632725917256607,
+        "davies_bouldin_score": 3.3810348179751455,
+        "inertia": 74.77421569824219
+      },
+      {
+        "k": 5,
+        "silhouette_score": 0.05577085167169571,
+        "calinski_harabasz_score": 7.861640018885407,
+        "davies_bouldin_score": 3.2282780591805307,
+        "inertia": 72.65851593017578
+      },
+      {
+        "k": 6,
+        "silhouette_score": 0.04178348928689957,
+        "calinski_harabasz_score": 7.371439147872534,
+        "davies_bouldin_score": 3.1473110616536495,
+        "inertia": 70.68351745605469
+      },
+      {
+        "k": 7,
+        "silhouette_score": 0.03764103353023529,
+        "calinski_harabasz_score": 6.669294293954439,
+        "davies_bouldin_score": 3.0519260082671944,
+        "inertia": 69.5361328125
+      },
+      {
+        "k": 8,
+        "silhouette_score": 0.03667699545621872,
+        "calinski_harabasz_score": 6.065886496471341,
+        "davies_bouldin_score": 2.9817654433912932,
+        "inertia": 68.64522552490234
+      }
+    ],
+    "Title + Abstract": [
+      {
+        "k": 2,
+        "silhouette_score": 0.06542618572711945,
+        "calinski_harabasz_score": 12.040136988586218,
+        "davies_bouldin_score": 3.643433887238989,
+        "inertia": 78.02689361572266
+      },
+      {
+        "k": 3,
+        "silhouette_score": 0.04152434319257736,
+        "calinski_harabasz_score": 10.056151896400692,
+        "davies_bouldin_score": 3.4531952732552296,
+        "inertia": 74.72008514404297
+      },
+      {
+        "k": 4,
+        "silhouette_score": 0.06151772662997246,
+        "calinski_harabasz_score": 9.291094406588515,
+        "davies_bouldin_score": 3.2421490319691366,
+        "inertia": 71.76022338867188
+      },
+      {
+        "k": 5,
+        "silhouette_score": 0.05168788880109787,
+        "calinski_harabasz_score": 8.006735662602201,
+        "davies_bouldin_score": 3.2172399735657775,
+        "inertia": 70.22694396972656
+      },
+      {
+        "k": 6,
+        "silhouette_score": 0.039623986929655075,
+        "calinski_harabasz_score": 7.376749872362459,
+        "davies_bouldin_score": 3.137585221180436,
+        "inertia": 68.50602722167969
+      },
+      {
+        "k": 7,
+        "silhouette_score": 0.05048385635018349,
+        "calinski_harabasz_score": 6.820101894888982,
+        "davies_bouldin_score": 2.8746801030594265,
+        "inertia": 67.11075592041016
+      },
+      {
+        "k": 8,
+        "silhouette_score": 0.04647058621048927,
+        "calinski_harabasz_score": 6.102069600466844,
+        "davies_bouldin_score": 2.978589519036847,
+        "inertia": 66.45874786376953
+      }
+    ]
+  },
+  "best_by_condition": {
+    "Title only": {
+      "k": 2,
+      "silhouette_score": 0.07902462780475616
+    },
+    "Abstract only": {
+      "k": 2,
+      "silhouette_score": 0.061625465750694275
+    },
+    "Title + Abstract": {
+      "k": 2,
+      "silhouette_score": 0.06542618572711945
+    }
+  },
+  "step3_title_abstract_provenance": {
+    "selected_k": 2,
+    "selected_k_silhouette": 0.06542618572711945,
+    "source": "C:\\Users\\prann\\workspace\\agentic-ai-xai-research\\outputs\\clustering_results.json"
+  },
+  "interpretation": {
+    "highest_best_silhouette_condition": "Title only",
+    "highest_best_silhouette": 0.07902462780475616,
+    "best_result_by_condition": {
+      "Title only": {
+        "k": 2,
+        "silhouette_score": 0.07902462780475616
+      },
+      "Abstract only": {
+        "k": 2,
+        "silhouette_score": 0.061625465750694275
+      },
+      "Title + Abstract": {
+        "k": 2,
+        "silhouette_score": 0.06542618572711945
+      }
+    },
+    "all_best_silhouettes_below_0_1": true,
+    "note": "This ablation evaluates semantic clustering behavior; it does not establish research-gap identification.",
+    "weak_separation_statement": "All conditions have best silhouette scores below 0.1; semantic separation is weak under this descriptive threshold."
+  }
+}

@@ -1,0 +1,54 @@
+# Python caches and build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.ruff_cache/
+.pytype/
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Model and package caches
+.cache/
+.cache-huggingface/
+.huggingface/
+cache/
+.tox/
+
+# Editors and operating-system files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+tmp/
+temporary/
+secrets/
+credentials/
+
+# Optional raw retrieval checkpoint; final corpus/statistics are retained.
+outputs/retrieval_progress.json
