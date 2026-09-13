@@ -1,60 +1,107 @@
-# An Agentic AI Framework for Automated Literature Analysis
-## Potential Research-Gap Identification in Healthcare XAI
+ <div align="center">
 
-## Overview
+# 🧠 Agentic AI for Automated Literature Analysis and Research-Gap Identification
 
-This repository contains a small, reproducible research prototype for literature analysis in healthcare Explainable AI (XAI). It retrieves and screens a scholarly corpus, represents papers semantically, evaluates thematic clustering, performs controlled comparison studies, and extracts evidence-supported potential research-gap hypotheses.
+### A Modular AI-Assisted Framework for Healthcare Explainable Artificial Intelligence (XAI)
 
-The reusable implementation lives in `src/agentic_xai/`; command-line entry points live in `scripts/`. Existing artifact paths under `outputs/` are preserved for experimental provenance.
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)
+![Sentence Transformers](https://img.shields.io/badge/Sentence--Transformers-Embeddings-orange)
+![Scikit Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-F7931E?logo=scikit-learn)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Processing-150458?logo=pandas)
+![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-013243?logo=numpy)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-This is a research-assistance framework, not an autonomous system that definitively discovers, proves, or confirms research gaps. Candidate gaps require further investigation and domain review.
+</div>
 
-## Research Objective
+---
 
-The project studies whether a lightweight sequential agentic workflow can support transparent literature analysis and potential research-gap identification in healthcare XAI:
+# 📖 Overview
 
-```mermaid
-flowchart LR
-    A[Retrieval] --> B[Screening]
-    B --> C[Deduplication]
-    C --> D[Embeddings]
-    D --> E[Clustering]
-    E --> F[Baselines]
-    F --> G[Ablation]
-    G --> H[Stability]
-    H --> I[Evidence Extraction]
-    I --> J[Candidate Gap Identification]
-```
+Systematic literature reviews require researchers to collect relevant papers, inspect abstracts, identify common themes, compare methodologies, and determine areas that may require further investigation.
 
-## Pipeline
+This project presents a modular **Agentic AI-assisted literature analysis framework** for organizing research papers and identifying **potential research-gap hypotheses**.
 
-1. `scripts/run_retrieval.py` retrieves from Semantic Scholar and arXiv, screens transparently, deduplicates records, and writes the corpus.
-2. `scripts/run_analysis.py` creates normalized `all-MiniLM-L6-v2` embeddings and evaluates K-Means for K=2..8.
-3. `scripts/run_evaluation.py` compares MiniLM with TF-IDF and TF-IDF plus Truncated SVD baselines.
-4. `scripts/run_ablation.py` compares title-only, abstract-only, and title-plus-abstract representations.
-5. `scripts/run_stability.py` evaluates K-Means initialization sensitivity across eight seeds using ARI/NMI for K=2 assignments.
-6. `scripts/run_gap_analysis.py` extracts exact evidence-bearing abstract sentences and produces candidate gap hypotheses without an LLM or external API.
+The case study focuses on:
 
-## Project Structure
+> **Explainable Artificial Intelligence in Healthcare**
+
+The system combines literature retrieval, semantic embeddings, clustering, baseline comparisons, ablation analysis, stability analysis, and deterministic evidence extraction.
+
+> **Important:** This project is a research-assistance system. It identifies potential research directions from literature evidence; it does not independently prove or confirm that a research gap exists.
+
+The term **agentic** refers to modular sequential orchestration of research tasks. The current implementation is not an autonomous LLM-based agent.
+
+---
+
+# ✨ Features
+
+* 📚 Literature retrieval from Semantic Scholar and arXiv
+* 🧹 Relevance filtering and duplicate removal
+* 📝 Corpus metadata and provenance tracking
+* 🧠 Sentence-transformer semantic embeddings
+* 🔢 K-Means clustering for thematic organization
+* 📊 Silhouette coefficient evaluation
+* 📈 Calinski–Harabasz index analysis
+* 📉 Davies–Bouldin index analysis
+* 📊 TF-IDF baseline comparison
+* 🔻 TF-IDF + Truncated SVD baseline comparison
+* 🧪 Title-only, abstract-only, and title-plus-abstract ablation
+* 🔁 K-Means initialization stability analysis
+* 📐 Adjusted Rand Index and NMI analysis
+* 🔍 Evidence-based potential research-gap extraction
+* 📊 Automated figure generation
+* 🧪 Lightweight integrity and data-preservation tests
+* 🔐 Environment-variable-based API configuration
+* 🛡️ Overwrite protection for important experiment outputs
+
+---
+
+# 🛠️ Technology Stack
+
+| Category             | Technologies                                  |
+| -------------------- | --------------------------------------------- |
+| Programming Language | Python                                        |
+| Literature Retrieval | Semantic Scholar API, arXiv                   |
+| Data Processing      | Pandas, NumPy                                 |
+| Semantic Embeddings  | Sentence Transformers                         |
+| Embedding Model      | `all-MiniLM-L6-v2`                            |
+| Clustering Algorithm | K-Means                                       |
+| Baseline Methods     | TF-IDF, Truncated SVD                         |
+| Evaluation Metrics   | Silhouette, Calinski–Harabasz, Davies–Bouldin |
+| Stability Metrics    | ARI, NMI                                      |
+| Visualization        | Matplotlib                                    |
+| Testing              | Python `unittest`                             |
+| Configuration        | Environment Variables                         |
+| Dataset              | Research Paper Metadata and Abstracts         |
+
+---
+
+# 📂 Project Structure
 
 ```text
 agentic-ai-xai-research/
-├── README.md
-├── requirements.txt
+│
+├── .env.example
 ├── .gitignore
 ├── LICENSE
+├── README.md
 ├── pyproject.toml
-├── .env.example
-├── src/
-│   └── agentic_xai/
-│       ├── config.py
-│       ├── embeddings.py
-│       ├── retrieval.py
-│       ├── clustering.py
-│       ├── evaluation.py
-│       ├── ablation.py
-│       ├── stability.py
-│       └── gap_analysis.py
+├── requirements.txt
+│
+├── data/
+│   ├── corpus.csv
+│   └── README.md
+│
+├── docs/
+│   └── methodology.md
+│
+├── outputs/
+│   ├── README.md
+│   ├── *.json
+│   ├── *.csv
+│   ├── embeddings.npy
+│   └── figures/
+│
 ├── scripts/
 │   ├── run_retrieval.py
 │   ├── run_analysis.py
@@ -62,110 +109,551 @@ agentic-ai-xai-research/
 │   ├── run_ablation.py
 │   ├── run_stability.py
 │   └── run_gap_analysis.py
-├── tests/
-│   ├── test_imports.py
-│   ├── test_paths.py
-│   └── test_data_integrity.py
-├── data/
-│   ├── corpus.csv
-│   └── README.md
-├── outputs/
-│   ├── figures/
-│   └── README.md
-└── docs/
-    └── methodology.md
+│
+├── src/
+│   └── agentic_xai/
+│       ├── __init__.py
+│       ├── config.py
+│       ├── utils.py
+│       ├── embeddings.py
+│       ├── retrieval.py
+│       ├── clustering.py
+│       ├── evaluation.py
+│       ├── ablation.py
+│       ├── stability.py
+│       └── gap_analysis.py
+│
+└── tests/
+    ├── __init__.py
+    ├── test_data_integrity.py
+    ├── test_imports.py
+    └── test_paths.py
 ```
 
-The current reusable package is `src/agentic_xai/`, and its six command-line wrappers are in `scripts/`. The compact tree above is retained only as a high-level view; see the package and wrapper directories for the complete current layout. Existing output paths remain unchanged for reproducibility.
+---
 
-## Installation
+# ⚙️ Research Workflow
 
-From the repository root:
+```text
+Literature Retrieval
+        │
+        ▼
+Relevance Filtering and Deduplication
+        │
+        ▼
+Corpus Construction
+        │
+        ▼
+Title and Abstract Representation
+        │
+        ▼
+Sentence-Transformer Embeddings
+        │
+        ▼
+K-Means Clustering
+        │
+        ├── Clustering Metrics
+        ├── Baseline Comparison
+        ├── Input Ablation
+        └── Stability Analysis
+        │
+        ▼
+Evidence Extraction
+        │
+        ▼
+Potential Research-Gap Hypotheses
+```
+
+---
+
+# 🔬 Research Questions
+
+### RQ1 — Literature Organization
+
+Can semantic representations and clustering organize healthcare XAI literature into useful thematic groups?
+
+### RQ2 — Method Comparison
+
+How does sentence-transformer-based clustering compare with traditional TF-IDF-based clustering methods?
+
+### RQ3 — Robustness
+
+How sensitive are the clustering results to input representation and K-Means initialization?
+
+### RQ4 — Potential Research-Gap Identification
+
+Can abstract-level evidence be grouped into defensible potential research-gap hypotheses for further investigation?
+
+---
+
+# 📊 Dataset and Experimental Summary
+
+The current case-study corpus contains:
+
+| Experimental Item                      |  Value |
+| -------------------------------------- | -----: |
+| Final unique papers                    |    187 |
+| Papers with usable abstracts           |    175 |
+| Embedding dimension                    |    384 |
+| Evaluated K values                     |    2–8 |
+| Main selected K                        |      2 |
+| Best MiniLM silhouette coefficient     | 0.0654 |
+| Best title-only silhouette coefficient | 0.0790 |
+| Seeds selecting K = 2                  | 7 of 8 |
+| Mean pairwise ARI for K = 2            | 0.9183 |
+
+The best silhouette coefficient is low, indicating weak global semantic separation in the evaluated corpus. The stability analysis indicates that the two-cluster partition is relatively consistent across K-Means initializations, but stability does not by itself prove that the clusters are semantically meaningful.
+
+---
+
+# 🧠 Semantic Embedding
+
+The main semantic representation uses:
+
+```text
+sentence-transformers/all-MiniLM-L6-v2
+```
+
+The input text is constructed using:
+
+```text
+Paper Title + Abstract
+```
+
+The embeddings are L2-normalized before clustering.
+
+The main clustering experiment evaluates:
+
+```text
+K = 2, 3, 4, 5, 6, 7, 8
+```
+
+The selected value of K is determined using the highest silhouette coefficient, with deterministic tie handling.
+
+---
+
+# 📊 Baseline Comparison
+
+The main semantic embedding approach is compared with:
+
+### 1. MiniLM Embeddings + K-Means
+
+Uses contextual sentence embeddings generated from the MiniLM model.
+
+### 2. TF-IDF + K-Means
+
+Uses traditional term-frequency and inverse-document-frequency features.
+
+### 3. TF-IDF + Truncated SVD + K-Means
+
+Uses a lower-dimensional representation derived from TF-IDF features.
+
+The baseline comparison is descriptive. Statistical significance testing and confidence intervals are not currently included.
+
+---
+
+# 🧪 Ablation Study
+
+The ablation study evaluates three text-input configurations:
+
+| Input Configuration | Best Silhouette |
+| ------------------- | --------------: |
+| Title only          |          0.0790 |
+| Abstract only       |          0.0616 |
+| Title + Abstract    |          0.0654 |
+
+The title-only configuration achieved the highest silhouette coefficient in this experiment. However, this result does not automatically establish that title-only input is superior for the complete literature-analysis task.
+
+---
+
+# 🔁 Stability Analysis
+
+The stability experiment evaluates K-Means using the following random seeds:
+
+```text
+42, 0, 1, 2, 10, 20, 50, 100
+```
+
+The analysis reports:
+
+* Selected K for each seed
+* Best silhouette coefficient
+* Mean silhouette coefficient
+* Standard deviation of silhouette coefficient
+* Adjusted Rand Index (ARI)
+* Normalized Mutual Information (NMI)
+* Pairwise cluster agreement
+
+Main stability findings:
+
+```text
+K = 2 selected in 7 of 8 seeds
+Mean pairwise ARI = 0.9183
+```
+
+These results suggest relatively stable clustering initialization behavior, while the low silhouette values indicate that the semantic separation remains weak.
+
+---
+
+# 🔍 Potential Research-Gap Analysis
+
+The gap-analysis stage extracts exact evidence-bearing sentences from available abstracts and groups them into research themes.
+
+The current evidence categories include:
+
+* 📊 Evaluation and reproducibility
+* 🏥 Clinical utility and real-world usability
+* 🛡️ Reliability, robustness, fairness, and uncertainty
+
+The system produces potential research-gap hypotheses such as:
+
+### Evaluation and Reproducibility
+
+> Reproducible and comparative evaluation of healthcare XAI methods remains insufficiently developed, particularly due to inconsistent evaluation practices and limited standardization of explanation-quality assessment.
+
+### Clinical Utility and Real-World Usability
+
+> The clinical utility and real-world usability of healthcare XAI explanations remain insufficiently evaluated across diverse clinical contexts.
+
+### Reliability and Robustness
+
+> Reliability and robustness of healthcare XAI systems under variations in data, model conditions, and deployment contexts remain insufficiently characterized.
+
+These statements are **potential research-gap hypotheses**, not confirmed research gaps.
+
+---
+
+# 📈 Outputs and Visualizations
+
+The project generates outputs for:
+
+* Literature corpus statistics
+* Retrieval provenance
+* Cluster assignments
+* Embedding matrices
+* Clustering metrics
+* Baseline comparisons
+* Ablation experiments
+* Stability experiments
+* Potential research-gap candidates
+* Evidence passages
+* Research figures
+
+Important output files include:
+
+```text
+outputs/corpus_manifest.csv
+outputs/corpus_stats.json
+outputs/cluster_assignments.csv
+outputs/clustering_results.json
+outputs/embeddings.npy
+outputs/baseline_results.json
+outputs/baseline_summary.csv
+outputs/ablation_results.json
+outputs/ablation_summary.csv
+outputs/stability_results.json
+outputs/stability_summary.csv
+outputs/gap_analysis.json
+outputs/gap_candidates.csv
+outputs/gap_evidence.csv
+```
+
+Figures are stored in:
+
+```text
+outputs/figures/
+```
+
+---
+
+# 🚀 Installation
+
+## 1. Clone the Repository
+
+```bash
+git clone https://github.com/prannoychandola/agentic-ai-xai-research.git
+```
+
+## 2. Navigate to the Project
+
+```bash
+cd agentic-ai-xai-research
+```
+
+## 3. Create a Virtual Environment
+
+### Windows PowerShell
 
 ```powershell
 python -m venv .venv
-.venv\Scripts\activate
-python -m pip install -r requirements.txt
+.venv\Scripts\Activate.ps1
 ```
 
-## API Key Configuration
+### macOS/Linux
 
-Only retrieval requires credentials. Do not place keys in source files, notebooks, README files, or committed configuration.
-
-PowerShell:
-
-```powershell
-$env:SEMANTIC_SCHOLAR_API_KEY="YOUR_API_KEY"
-$env:ARXIV_CONTACT_EMAIL="your-email@example.com"
+```bash
+python -m venv .venv
+source .venv/bin/activate
 ```
 
-`src/agentic_xai/retrieval.py` reads `SEMANTIC_SCHOLAR_API_KEY` and `ARXIV_CONTACT_EMAIL` from the environment. The other stages are local and do not call external APIs.
+## 4. Install Dependencies
 
-## Running the Pipeline
+```bash
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
 
-Run stages from the repository root:
+---
+
+# 🔐 Environment Configuration
+
+Copy the example environment file.
+
+### Windows PowerShell
 
 ```powershell
+Copy-Item .env.example .env
+```
+
+### macOS/Linux
+
+```bash
+cp .env.example .env
+```
+
+Configure the required environment variables before running the retrieval stage.
+
+Example:
+
+```powershell
+$env:SEMANTIC_SCHOLAR_API_KEY="YOUR_NEW_API_KEY"
+```
+
+> Never commit `.env` files or real API keys to GitHub. Use environment variables for credentials.
+
+---
+
+# ▶️ Running the Project
+
+Run the commands from the project root.
+
+## 1. Literature Retrieval
+
+```bash
 python scripts/run_retrieval.py
+```
+
+To intentionally regenerate retrieval outputs:
+
+```bash
+python scripts/run_retrieval.py --overwrite
+```
+
+## 2. Semantic Analysis and Clustering
+
+```bash
 python scripts/run_analysis.py
+```
+
+To intentionally regenerate clustering outputs:
+
+```bash
+python scripts/run_analysis.py --overwrite
+```
+
+## 3. Baseline Evaluation
+
+```bash
 python scripts/run_evaluation.py
+```
+
+To intentionally regenerate baseline outputs:
+
+```bash
+python scripts/run_evaluation.py --overwrite
+```
+
+## 4. Ablation Study
+
+```bash
 python scripts/run_ablation.py
+```
+
+To intentionally regenerate ablation outputs:
+
+```bash
+python scripts/run_ablation.py --overwrite
+```
+
+## 5. Stability Analysis
+
+```bash
 python scripts/run_stability.py
+```
+
+## 6. Potential Research-Gap Analysis
+
+```bash
 python scripts/run_gap_analysis.py
 ```
 
-All stages refuse to overwrite existing results unless explicitly invoked with `--overwrite` where supported. Do not rerun completed stages casually because generated files are experimental artifacts.
+---
 
-## Experimental Evaluation
+# ⚠️ Overwrite Protection
 
-The primary semantic representation uses `sentence-transformers/all-MiniLM-L6-v2`, 384-dimensional L2-normalized embeddings, title plus abstract text, K-Means with `random_state=42` and `n_init=20`, and K=2..8.
+The analysis, evaluation, and ablation stages include overwrite protection.
 
-Baselines use TF-IDF plus K-Means and TF-IDF plus Truncated SVD plus K-Means. The ablation compares title-only, abstract-only, and title-plus-abstract MiniLM embeddings. Stability evaluates seeds `42, 0, 1, 2, 10, 20, 50, 100` and compares K=2 assignments using ARI and NMI.
+Do not use:
 
-## Results Summary
+```bash
+--overwrite
+```
 
-These values are preserved from the completed experiments:
+unless you intentionally want to regenerate the corresponding outputs.
 
-- Final corpus: 187 unique papers
-- Papers with usable abstracts: 175
-- Best MiniLM silhouette: 0.06542618572711945 at K=2
-- Best TF-IDF silhouette: 0.007523395743017814
-- Best TF-IDF plus SVD silhouette: 0.01259804986750632
-- Best title-only silhouette: 0.07902462780475616
-- Best abstract-only silhouette: 0.061625465750694275
-- Best title-plus-abstract silhouette: 0.06542618572711945
-- K=2 selected in 7/8 stability seeds
-- Mean pairwise K=2 ARI: 0.918258085681945
-- Gap analysis: 96 evidence passages across 64 papers
+Regenerating outputs may:
 
-All absolute silhouette scores were low. MiniLM performed better than the tested lexical baselines on best silhouette, while the title-only ablation was higher than title-plus-abstract in that experiment. Stability describes robustness to K-Means initialization, not semantic validity. Candidate gaps are evidence-supported hypotheses, not definitive discoveries.
+* Replace existing scientific artifacts
+* Require model downloads
+* Require additional computation
+* Produce different results under changed dependencies
+* Make comparison with the reported experiments more difficult
 
-## Output Files
+---
 
-See [outputs/README.md](outputs/README.md) for the output inventory and interpretation guidance. Outputs are experimental artifacts; clustering scores are descriptive evaluation results, and gap candidates are not proven gaps.
+# 🧪 Testing
 
-## Limitations
+Run the lightweight integrity tests:
 
-- Retrieval and relevance screening depend on API metadata and deterministic keyword rules.
-- Abstract-only eligibility excludes papers without usable abstracts from embedding-based analysis, while retaining them in corpus accounting.
-- Clustering quality is weak by silhouette score and does not establish semantic validity.
-- Stability does not prove that the semantic grouping is substantively correct.
-- Gap analysis uses deterministic evidence extraction from titles/abstracts and does not replace systematic review or expert judgment.
-- Corpus redistribution may be subject to source-specific licensing and terms.
-- No human expert validation was performed. F1-score and ROC-AUC are not applicable because this project has no labelled classification ground truth.
+```bash
+python -m unittest discover -s tests -v
+```
 
-## Reproducibility
+The tests verify:
 
-Paths are resolved relative to the repository root, so scripts can be invoked from another working directory. Seeds, K values, model settings, normalization, baseline configuration, ablation conditions, and stability settings are recorded in source and output metadata. Existing outputs are preserved and scripts avoid overwriting them unless explicitly requested where supported. Run lightweight, read-only integrity checks with `python -m unittest discover -s tests -v`.
+* Package imports
+* Project-relative paths
+* CSV and JSON readability
+* Required output availability
+* Data integrity
+* Embedding metadata
+* Preservation of important artifacts
 
-## Citation
+The tests are designed to avoid:
 
-If you use this repository in academic work, cite the associated paper:
+* API calls
+* Model downloads
+* Expensive experiments
+* Output regeneration
 
-> An Agentic AI Framework for Automated Literature Analysis and Potential Research-Gap Identification: A Case Study in Healthcare XAI.
+---
 
-Add the final publication venue, authors, DOI, and version information when available.
+# 📌 Limitations
 
-## License
+### Corpus Coverage
 
-The code in this repository is released under the MIT License. See [LICENSE](LICENSE). Corpus redistribution may be subject to separate source-specific terms; inspect those requirements before publishing or redistributing `data/corpus.csv`.
+The case study uses a retrieved literature corpus and is not an exhaustive systematic review of all healthcare XAI publications.
+
+### Abstract-Level Analysis
+
+Most analysis is based on titles and abstracts. Full-text methods, datasets, limitations, and experimental details may not be captured.
+
+### Single Embedding Model
+
+The main experiments use one sentence-transformer model. Other embedding models may produce different representations and clustering behavior.
+
+### Weak Semantic Separation
+
+The best silhouette coefficient is low, indicating weak global separation between clusters.
+
+### No Labelled Ground Truth
+
+The task is unsupervised clustering. Therefore, F1-score, precision, recall, and ROC-AUC are not reported because labelled ground-truth classes are unavailable.
+
+### No Statistical Significance Testing
+
+Baseline and ablation comparisons are descriptive. Statistical significance testing and confidence intervals are not currently included.
+
+### No Human Expert Validation
+
+The current implementation does not include formal clinician or domain-expert validation. Potential research-gap candidates should be reviewed by qualified researchers before being treated as established findings.
+
+### Potential Research-Gap Interpretation
+
+Evidence-support counts are not proof that a research gap exists. The extracted candidates should be treated as hypotheses for further investigation.
+
+---
+
+# 🔮 Future Improvements
+
+* Compare multiple embedding models
+* Evaluate additional clustering algorithms
+* Use full-text literature instead of abstracts only
+* Add topic modelling and keyword-based analysis
+* Include expert-labelled evaluation subsets
+* Add statistical significance testing
+* Improve domain-specific evidence extraction
+* Add clinical-context and dataset metadata
+* Expand the healthcare XAI literature corpus
+* Investigate explanation reliability, fairness, uncertainty, and robustness
+* Develop an interactive research-analysis dashboard
+* Add automated experiment tracking and versioning
+
+---
+
+# 📜 Data and Licensing Notice
+
+This repository contains literature metadata, a research corpus, abstract-derived evidence, embeddings, and analytical outputs.
+
+Before redistributing or using the data publicly:
+
+* Review the terms of the original data providers.
+* Check whether abstracts and extracted passages may be redistributed.
+* Respect publisher and repository licensing requirements.
+* Use original source records for authoritative bibliographic information.
+* Do not treat the included corpus as a complete literature review.
+
+The code is provided under the license included in this repository. Data and generated artifacts may be subject to separate rights and restrictions.
+
+---
+
+# 👨‍💻 Author
+
+## Prannoy Chandola
+
+**Aspiring AI Engineer and AI Researcher**
+
+Interested in:
+
+* Artificial Intelligence
+* Machine Learning
+* Deep Learning
+* Natural Language Processing
+* Generative AI
+* Explainable AI
+* Agentic AI
+* AI Research
+
+### GitHub
+
+https://github.com/prannoychandola
+
+### LinkedIn
+
+https://www.linkedin.com/in/prannoy-chandola-8a53b5366/
+
+---
+
+# 📜 License
+
+This project is licensed under the **MIT License**.
+
+See the `LICENSE` file for more information.
+
+---
+
+<div align="center">
+
+⭐ If you found this project useful, consider giving it a star on GitHub.
+
+</div>
